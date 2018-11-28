@@ -1,0 +1,19 @@
+version: '2'
+
+services: 
+
+#    build:
+#  context: .
+#  dockerfile: BBDDDockerfile
+
+  portal:
+    build: 
+      context: .
+#     dockerfile: ServerDockerfile
+    ports: 
+      - "3006:3006"
+      - "3005:3005"
+      - "3004:3004"
+
+
+

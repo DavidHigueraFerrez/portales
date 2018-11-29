@@ -38,13 +38,11 @@ En funcion del parametro que pase el fichero .env se creara el portal de PDI, PA
 PORTAL=PDI
 ```
 
-## Contexto y Puertos
-El puerto en el que corre la aplicación dentro del contenedor sera el `3004` o `3005` o `3006`, en funcion de PDI,PAS o Estudiante. Por defecto este puerto se mapea en el `docker-compose-yml` al puerto `3004` o `3005` o `3006` del host. Se selecciona automaticamente en funcion del parametro que reciba del fichero .env . El contexto de cada aplicacion sera `/portal-pdi/´ o `/portal-pas/´o `/portal-estudiante/´ 
 
 ## Menus laterales que se sirven desde el portal
 
 Los menus laterales varian en funcion de estilos, aplicaciones y portales. 
-El menu CSS del menu lateral diseñado para /static-button-parking/ es valido para todas las aplicaciones de estilo azul
+El menu CSS del menu lateral diseñado para /static-button/ es valido para todas las aplicaciones de estilo azul
 
 ### Actualmente disponibles
 
@@ -52,27 +50,26 @@ El menu CSS del menu lateral diseñado para /static-button-parking/ es valido pa
 https://portal.etsit.upm.es/portal-pdi/static-button-gestiondoc
 
 
-https://portal.etsit.upm.es/portal-pdi/static-button-parking
+https://portal.etsit.upm.es/portal-pdi/static-button
 
 #### Menu lateral para aplicaciones portal PAS
-https://portal.etsit.upm.es/portal-pas/static-button-parking
+https://portal.etsit.upm.es/portal-pas/static-button
 
 #### Menu lateral para aplicaciones portal Estudiantes
-https://portal.etsit.upm.es/portal-estudiantes/static-button-parking
+https://portal.etsit.upm.es/portal-estudiantes/static-button
 
 
-https://portal.etsit.upm.es/portal-estudiantes/static-button-inter
 
 
 https://portal.etsit.upm.es/portal-estudiantes/static-button-intercontacta
 
 ### Insertar Menu Lateral en el resto de aplicaciones
-1º Insertar el script disponible en https://portal.etsit.upm.es/portal-pdi/button-static-[aplicacion].js 
+1º Insertar el script disponible en https://portal.etsit.upm.es/portal-pdi/button-static.js 
 
 Ejemplo
 
 ```
-<script src="https://portal.etsit.upm.es/portal-pdi/static-button-inter"></script>
+<script src="https://portal.etsit.upm.es/portal-pdi/static-button"></script>
 ```
 
 2º Crear un div con id unico donde poder insertar el menu lateral, intentar insertarlo en el html en el lugar del boton de logout.

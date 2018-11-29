@@ -1,26 +1,21 @@
 var express = require('express');
 var router = express.Router();
 
-var portal =process.env.PORTAL;;
 
-if( portal === 'PDI'){
-    /* GET home page. */
-    router.get('/', function(req, res, next) {
-      res.render('index-PDI', { title: 'Express' });
-    });
-}
-else if(portal === 'PAS'){
-    /* GET home page. */
-    router.get('/', function(req, res, next) {
-      res.render('index-PAS', { title: 'Express' });
-    });
-}
-else if(portal ==='Estudiantes'){
-    /* GET home page. */
-  router.get('/', function(req, res, next) {
-    res.render('index-ESTD', { title: 'Express' });
-  });
-}
+router.get('/', function(req, res) {
+  res.json({ message: 'hooray! welcome to our rest video api!' });  
+});
+
+console.log('entra index');
+router.get('/portal-pdi', function(req, res, next) {
+  res.render('index-PDI', { title: 'Express' });
+});
+router.get('/portal-pas', function(req, res, next) {
+  res.render('index-PAS', { title: 'Express' });
+});
+router.get('/portal-estudiantes', function(req, res, next) {
+  res.render('index-ESTD', { title: 'Express' });
+});
 
 
 module.exports = router;

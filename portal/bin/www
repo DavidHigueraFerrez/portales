@@ -12,21 +12,8 @@ var http = require('http');
  * Get port from environment and store in Express.
  */
 
-var portal = process.env.PORTAL;;
-
-if( portal === 'PDI'){
-  var port = normalizePort(process.env.PORT || '3004');
-  app.set('port', port);
-}
-else if(portal === 'PAS'){
-  var port = normalizePort(process.env.PORT || '3005');
-  app.set('port', port);
-}
-else if(portal ==='Estudiantes'){
-  var port = normalizePort(process.env.PORT || '3006');
-  app.set('port', port);
-}
-console.log('www'+portal);
+var port = normalizePort(process.env.PORT || '3004');
+app.set('port', port);
 
 /**
  * Create HTTP server.

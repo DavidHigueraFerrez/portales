@@ -9,26 +9,8 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-//variable que indica que portal esta desplegado
-// 'PDI' --> PDI
-// 'PAS' --> PAS
-// 'Estudiantes' --> Estudiantes
-const portal = process.env.PORTAL;
-exports.portal = portal;
 
-const contextPath = (() => {
-  if (portal === 'PDI'){
-    return '/portal-pdi/';
-  } 
-  if (portal === 'PAS'){
-    return '/portal-pas/';
-  }
-  if (portal === 'Estudiantes'){
-    return '/portal-estudiantes/';
-  }
-})();
-console.log(portal);
-console.log(contextPath);
+const contextPath = '/portal-pdi/';
 exports.contextPath = contextPath;
 
 // view engine setup
@@ -42,41 +24,29 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(contextPath, express.static(path.join(__dirname, 'public')));
 
+app.use('/', indexRouter);
 
-app.use(contextPath, indexRouter);
 app.use('/users', usersRouter);
 
-//portal PDI
-if(portal === 'PDI' ){
-    app.get(contextPath + "static-button-gestiondoc", (req, res) => {
-      res.sendFile('./button-static-gestiondoc-PDI.js', {root: __dirname});
-    });
-    app.get(contextPath + "static-button-parking", (req, res) => {
-      res.sendFile('./button-static-parking-PDI.js', {root: __dirname});
-    });
-    app.get(contextPath +"static-button-html", (req, res) => {
-      res.sendFile('./button-static.html', {root: __dirname});
-    });
+//Menu Lateral PDI
+app.get("/portal-pdi/static-button-gestiondoc", (req, res) => {
+  res.sendFile('./button-static-gestiondoc-PDI.js', {root: __dirname});
+});
+app.get("/portal-pdi/static-button", (req, res) => {
+  res.sendFile('./button-static-parking-PDI.js', {root: __dirname});
+});
+//Menu Lateral PAS
+app.get("/portal-pas/static-button", (req, res) => {
+  res.sendFile('./button-static-parking-PAS.js', {root: __dirname});
+});
+//Menus Laterales Estudiantes
+app.get("/portal-estudiantes/static-button", (req, res) => {
+  res.sendFile('./button-static-parking-ESTD.js', {root: __dirname});
+});
+app.get("/portal-estudiantes/static-button-intercontac", (req, res) => {
+  res.sendFile('./button-static-intercontacta-ESTD.js', {root: __dirname});
+});
 
-  }
-  //portal PAS
-  else if(portal === 'PAS' ){
-    app.get(contextPath + "static-button-parking", (req, res) => {
-      res.sendFile('./button-static-parking-PAS.js', {root: __dirname});
-    });
-  }
-  //portal Estudiante
-  else if(portal === 'Estudiantes'){
-    app.get(contextPath + "static-button-inter", (req, res) => {
-      res.sendFile('./button-static-inter-ESTD.js', {root: __dirname});
-    });
-    app.get(contextPath + "static-button-intercontacta", (req, res) => {
-      res.sendFile('./button-static-intercontacta-ESTD.js', {root: __dirname});
-    });
-    app.get(contextPath + "static-button-parking", (req, res) => {
-      res.sendFile('./button-static-parking-ESTD.js', {root: __dirname});
-    });
-  } 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

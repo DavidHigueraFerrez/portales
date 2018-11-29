@@ -1,4 +1,4 @@
-# Progdoc
+# Portales de PAS-PDI-Estudiantes de la ETSIT UPM
 
 ## Descripción
 Proyecto en docker que crea los portales de PDI-PAS-Estudiantes en funcion de los parametros que reciba, creando asi los portales y los menus laterales que se sirven al resto de aplicaciones

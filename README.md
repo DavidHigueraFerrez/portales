@@ -15,7 +15,7 @@ Es necesario crear dos archivos para configurar el entorno
 `portal.prod.yml`
 
 ```
-version: '2'
+version: '3'
 
 services: 
 

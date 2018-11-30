@@ -10,7 +10,7 @@ Dentro de la carpeta  se encuentra todos los ficheros necesarios para el correct
 
 ## Variables de entorno en producción
 
-Es necesario crear dos archivos para configurar el entorno
+Es necesario crear dos archivos para configurar el entorno, ademas de instalar manualmente los paquetes de node mediante `npm install ` 
 
 `portal.prod.yml`
 

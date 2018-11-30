@@ -26,11 +26,7 @@ services:
 
 ### Configuracion de seleccion de portal
 
-En funcion del parametro que pase el fichero .env se creara el portal de PDI, PAS, o Estudiantes
-
-- PORTAL=PDI crea el portal del Personal Docente Investigador (PDI)
-- PORTAL=PAS crea el portal del Personal Administrativo (PAS)
-- PORTAL=Estudiantes crea el portal de los Estudiantes
+En parametros que recibe para la creacion del portal
 
 `portal.env`
 

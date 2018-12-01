@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
+var app = express();
+
 
 router.get('/', function(req, res) {
   res.json({ message: 'hooray! welcome to our rest video api!' });  
@@ -16,6 +18,7 @@ router.get('/portal-pas', function(req, res, next) {
 router.get('/portal-estudiantes', function(req, res, next) {
   res.render('index-ESTD', { title: 'Express' });
 });
+
 
 
 module.exports = router;

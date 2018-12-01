@@ -9,8 +9,7 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-
-const contextPath = '/portal-pdi/';
+const contextPath ='/portal-pdi/'
 exports.contextPath = contextPath;
 
 // view engine setup
@@ -45,6 +44,32 @@ app.get("/portal-estudiantes/static-button", (req, res) => {
 });
 app.get("/portal-estudiantes/static-button-intercontac", (req, res) => {
   res.sendFile('./button-static-intercontacta-ESTD.js', {root: __dirname});
+});
+
+//styles para pas -estudiantes
+app.get("/portal-pas/stylesheets/style.css", function(req, res, next) {
+  res.sendFile('./public/stylesheets/style.css', {root: __dirname});
+});
+
+app.get("/portal-estudiantes/stylesheets/style.css", function(req, res, next) {
+  res.sendFile('/public/stylesheets/style.css', {root: __dirname});
+});
+
+//fotos para logo etsit
+app.get("/portal-pas/images/logo-etsit.gif", function(req, res, next) {
+  res.sendFile('/public/images/logo-etsit.gif', {root: __dirname});
+});
+app.get("/portal-estudiantes/images/logo-etsit.gif", function(req, res, next) {
+  res.sendFile('/public/images/logo-etsit.gif', {root: __dirname});
+});
+
+//fotos para logo upm
+app.get("/portal-pas/images/logo-upm.gif", function(req, res, next) {
+  res.sendFile('/public/images/logo-upm.gif', {root: __dirname});
+});
+
+app.get("/portal-estudiantes/images/logo-upm.gif", function(req, res, next) {
+  res.sendFile('/public/images/logo-upm.gif', {root: __dirname});
 });
 
 // catch 404 and forward to error handler

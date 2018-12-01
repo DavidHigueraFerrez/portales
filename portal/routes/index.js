@@ -9,13 +9,13 @@ router.get('/', function(req, res) {
 });
 
 console.log('entra index');
-router.get('/portal-pdi', function(req, res, next) {
+router.get('/pdi', function(req, res, next) {
   res.render('index-PDI', { title: 'Express' });
 });
-router.get('/portal-pas', function(req, res, next) {
+router.get('/pas', function(req, res, next) {
   res.render('index-PAS', { title: 'Express' });
 });
-router.get('/portal-estudiantes', function(req, res, next) {
+router.get('/estudiantes', function(req, res, next) {
   res.render('index-ESTD', { title: 'Express' });
 });
 

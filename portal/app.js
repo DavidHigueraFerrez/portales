@@ -9,7 +9,7 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-const contextPath ='/portal-pdi/'
+const contextPath ='/pdi/'
 exports.contextPath = contextPath;
 
 // view engine setup
@@ -28,47 +28,47 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 //Menu Lateral PDI
-app.get("/portal-pdi/static-button-gestiondoc", (req, res) => {
+app.get("/pdi/static-button-gestiondoc", (req, res) => {
   res.sendFile('./button-static-gestiondoc-PDI.js', {root: __dirname});
 });
-app.get("/portal-pdi/static-button", (req, res) => {
+app.get("/pdi/static-button", (req, res) => {
   res.sendFile('./button-static-parking-PDI.js', {root: __dirname});
 });
 //Menu Lateral PAS
-app.get("/portal-pas/static-button", (req, res) => {
+app.get("/pas/static-button", (req, res) => {
   res.sendFile('./button-static-parking-PAS.js', {root: __dirname});
 });
 //Menus Laterales Estudiantes
-app.get("/portal-estudiantes/static-button", (req, res) => {
+app.get("/estudiantes/static-button", (req, res) => {
   res.sendFile('./button-static-parking-ESTD.js', {root: __dirname});
 });
-app.get("/portal-estudiantes/static-button-intercontac", (req, res) => {
+app.get("/estudiantes/static-button-intercontac", (req, res) => {
   res.sendFile('./button-static-intercontacta-ESTD.js', {root: __dirname});
 });
 
 //styles para pas -estudiantes
-app.get("/portal-pas/stylesheets/style.css", function(req, res, next) {
+app.get("/pas/stylesheets/style.css", function(req, res, next) {
   res.sendFile('./public/stylesheets/style.css', {root: __dirname});
 });
 
-app.get("/portal-estudiantes/stylesheets/style.css", function(req, res, next) {
+app.get("/estudiantes/stylesheets/style.css", function(req, res, next) {
   res.sendFile('/public/stylesheets/style.css', {root: __dirname});
 });
 
 //fotos para logo etsit
-app.get("/portal-pas/images/logo-etsit.gif", function(req, res, next) {
+app.get("/pas/images/logo-etsit.gif", function(req, res, next) {
   res.sendFile('/public/images/logo-etsit.gif', {root: __dirname});
 });
-app.get("/portal-estudiantes/images/logo-etsit.gif", function(req, res, next) {
+app.get("/estudiantes/images/logo-etsit.gif", function(req, res, next) {
   res.sendFile('/public/images/logo-etsit.gif', {root: __dirname});
 });
 
 //fotos para logo upm
-app.get("/portal-pas/images/logo-upm.gif", function(req, res, next) {
+app.get("/pas/images/logo-upm.gif", function(req, res, next) {
   res.sendFile('/public/images/logo-upm.gif', {root: __dirname});
 });
 
-app.get("/portal-estudiantes/images/logo-upm.gif", function(req, res, next) {
+app.get("/estudiantes/images/logo-upm.gif", function(req, res, next) {
   res.sendFile('/public/images/logo-upm.gif', {root: __dirname});
 });
 

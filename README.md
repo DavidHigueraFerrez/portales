@@ -43,29 +43,29 @@ El menu CSS del menu lateral diseñado para /static-button/ es valido para todas
 ### Actualmente disponibles
 
 #### Menu lateral para aplicaciones portal PDI
-https://portal.etsit.upm.es/portal-pdi/static-button-gestiondoc
+https://portal.etsit.upm.es/pdi/static-button-gestiondoc
 
 
-https://portal.etsit.upm.es/portal-pdi/static-button
+https://portal.etsit.upm.es/pdi/static-button
 
 #### Menu lateral para aplicaciones portal PAS
-https://portal.etsit.upm.es/portal-pas/static-button
+https://portal.etsit.upm.es/pas/static-button
 
 #### Menu lateral para aplicaciones portal Estudiantes
-https://portal.etsit.upm.es/portal-estudiantes/static-button
+https://portal.etsit.upm.es/estudiantes/static-button
 
 
 
 
-https://portal.etsit.upm.es/portal-estudiantes/static-button-intercontacta
+https://portal.etsit.upm.es/estudiantes/static-button-intercontacta
 
 ### Insertar Menu Lateral en el resto de aplicaciones
-1º Insertar el script disponible en https://portal.etsit.upm.es/portal-pdi/button-static.js 
+1º Insertar el script disponible en https://portal.etsit.upm.es/pdi/button-static.js 
 
 Ejemplo
 
 ```
-<script src="https://portal.etsit.upm.es/portal-pdi/static-button"></script>
+<script src="https://portal.etsit.upm.es/pdi/static-button"></script>
 ```
 
 2º Crear un div con id unico donde poder insertar el menu lateral, intentar insertarlo en el html en el lugar del boton de logout.

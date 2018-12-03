@@ -8,14 +8,10 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
-const local = process.env.PREPRODUCCION;
 
-
-const contextPathPDI = local === true ? '/portal-pdi/': process.env.CONTEXTOPDI
-const contextPathPAS = local === true ? '/portal-pas/': process.env.CONTEXTOPAS
-const contextPathESTD = local === true ? '/portal-estudiantes/': process.env.CONTEXTOESTD
-
-
+const contextPathPDI = normalize(process.env.CONTEXTOPDI || '/portal-pdi/');
+const contextPathPAS = normalize(process.env.CONTEXTOPAS || '/portal-pas/');
+const contextPathESTD =normalize(process.env.CONTEXTOESTD || '/portal-estudiantes/');
 
 exports.contextPathPDI = contextPathPDI;
 exports.contextPathPAS = contextPathPAS;
@@ -33,35 +29,33 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(contextPathPDI, express.static(path.join(__dirname, 'public')));
 app.use(contextPathPAS, express.static(path.join(__dirname, 'public')));
 app.use(contextPathESTD, express.static(path.join(__dirname, 'public')));
-
-
-
 app.use('/', indexRouter);
 
 app.use('/users', usersRouter);
 
 //Menu Lateral PDI
 app.get( contextPathPDI + "/static-button-gestiondoc", (req, res) => {
-  res.sendFile('./button-static-gestiondoc-PDI.js', {root: __dirname});
-});
-app.get(contextPathPDI +"/static-button", (req, res) => {
-  res.sendFile('./button-static-parking-PDI.js', {root: __dirname});
-});
-//Menu Lateral PAS
-app.get(contextPathPAS +"/static-button", (req, res) => {
-  res.sendFile('./button-static-parking-PAS.js', {root: __dirname});
-});
-//Menus Laterales Estudiantes
-app.get(contextPathESTD+"/static-button", (req, res) => {
-  res.sendFile('./button-static-parking-ESTD.js', {root: __dirname});
-});
-app.get(contextPathESTD+"/static-button-intercontac", (req, res) => {
-  res.sendFile('./button-static-intercontacta-ESTD.js', {root: __dirname});
-});
+  res.sendFile('./public/menus/button-static-gestiondoc-PDI.js', {root: __dirname}); 
+ });
+
+ app.get(contextPathPDI +"/static-button", (req, res) => {
+   res.sendFile('./public/menus/button-static-parking-PDI.js', {root: __dirname});
+ });
+ //Menu Lateral PAS
+ app.get(contextPathPAS +"/static-button", (req, res) => {
+   res.sendFile('./public/menus/button-static-parking-PAS.js', {root: __dirname});
+ });
+ //Menus Laterales Estudiantes
+ app.get(contextPathESTD+"/static-button", (req, res) => {
+   res.sendFile('./public/menus/button-static-parking-ESTD.js', {root: __dirname});
+ });
+ app.get(contextPathESTD+"/static-button-intercontac", (req, res) => {
+   res.sendFile('./public/menus/button-static-intercontacta-ESTD.js', {root: __dirname});
+ });
 
 //styles para pas -estudiantes
 app.get(contextPathPAS +"/stylesheets/style.css", function(req, res, next) {
-  res.sendFile('./public/stylesheets/style.css', {root: __dirname});
+  res.sendFile('/public/stylesheets/style.css', {root: __dirname});
 });
 
 app.get(contextPathESTD +"/stylesheets/style.css", function(req, res, next) {

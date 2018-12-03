@@ -16,8 +16,8 @@
   <title>Portal del PAS</title>
 </head>
 <body>
-      <% let desarrallo = false; %>
-      <% if(desarrallo === true){ %>
+      <% let preproduccion = process.env.PREPRODUCCION; %>
+      <% if(preproduccion === true){ %>
         <div id="banner" class="row">
           <div class="col-sm-12" ></div>
            <h3 id="titulo-banner">Portal en Desarrollo</h3>
@@ -43,6 +43,19 @@
       
       <p>El boton de acceso de las aplicaciones es &#9776; , desde ahi podra acceder a las aplicaciones del PDI</p>
       
-      
+      <div>
+      Tambien estan disponibles las siguiente aplicaciones 
+        <ul>
+          <br>
+          <li ><a href="https://www.upm.es/apolo/login.upm">Aplicacion de APOLO</a></li>
+          <li ><a href="https://goleta.etsit.upm.es/actas/">Listas de clase</a></li>
+          <li ><a href="https://www.upm.es/gauss/">Guías Docente (GAUSS)</a></li>
+          <li ><a href="http://www.etsit.upm.es/escuela/unidades-administrativas-y-servicios/incidencias-caus.html">CAUs</a></li>
+          <li ><a href="http://www.etsit.upm.es/footer-columnas4/personal/politecnica-virtual.html">Politécnica Virtual</a></li>
+          <li ><a href="https://www.etsit.upm.es/escuela/unidades-administrativas-y-servicios/reserva-de-espacios.html">Reserva de Espacios</a></li>
+          <li ><a href="https://webmail.etsit.upm.es/rc/v2/">Webmail</a></li>
+          <li ><a href="https://moodle.upm.es/">Moodle Upm</></li>
+        </ul> 
+      </div>
 </body>
 </html>

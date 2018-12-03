@@ -26,14 +26,15 @@ services:
 
 ### Configuracion de seleccion de portal
 
-En parametros que recibe para la creacion del portal para indicar los contextos de acceso a los diferentes portales
+En parametros que recibe para la creacion del portal para indicar los contextos de acceso a los diferentes portales, ademas de indicar si esta en produccion(TRUE) o no (FALSE), para asi configurar las variables de contexto
 
 `portal.env`
 
 ```
-CONTEXTOPDI='/pdi/'
-CONTEXTOPAS='/pas/'
-CONTEXTOESTD='/estudiantes/'
+PREPRODUCCION=FALSE
+CONTEXTOPDI=/pdi/
+CONTEXTOPAS=/pas/
+CONTEXTOESTD=/estudiantes/
 ```
 
 

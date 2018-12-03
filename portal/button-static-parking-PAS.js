@@ -56,7 +56,7 @@ let a =
 '<div id="06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05" class="sidenav-2">'+
 '  <a href="javascript:void(0)" class="closebtn" onclick="closeNav06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05()">×</a>'+
 '  <a href="https://appsrv.etsit.upm.es/parking">Aplicacion Parking</a>'+
-'  <a href="https://pruebas.etsit.upm.es/progdoc">Aplicacion programacion docente</a>'+
+'  <a href="https://pruebas.etsit.upm.es/progdoc/">Aplicacion programacion docente</a>'+
 '  <a href="https://appsrv.etsit.upm.es/practicas/home.htm">Aplicacion Practicas</a>'+
 '  <a href="https://appsrv.etsit.upm.es/ofic-inter/home.htm">Aplicacion Internacional</a>'+
 '  <a href="#">Listin Telefonico</a>'+

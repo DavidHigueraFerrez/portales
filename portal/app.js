@@ -8,10 +8,13 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
+const local = process.env.PREPRODUCCION;
 
-const contextPathPDI = process.env.CONTEXTOPDI
-const contextPathPAS = process.env.CONTEXTOPAS
-const contextPathESTD = process.env.CONTEXTOESTD
+
+const contextPathPDI = local === true ? '/portal-pdi/': process.env.CONTEXTOPDI
+const contextPathPAS = local === true ? '/portal-pas/': process.env.CONTEXTOPAS
+const contextPathESTD = local === true ? '/portal-estudiantes/': process.env.CONTEXTOESTD
+
 
 
 exports.contextPathPDI = contextPathPDI;

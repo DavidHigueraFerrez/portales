@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY portal/. /app
 
-#RUN npm install
+RUN npm install
 
 EXPOSE 3004
 

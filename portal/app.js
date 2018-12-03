@@ -9,8 +9,14 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-const contextPath ='/pdi/'
-exports.contextPath = contextPath;
+const contextPathPDI = process.env.CONTEXTOPDI
+const contextPathPAS = process.env.CONTEXTOPAS
+const contextPathESTD = process.env.CONTEXTOESTD
+
+
+exports.contextPathPDI = contextPathPDI;
+exports.contextPathPAS = contextPathPAS;
+exports.contextPathESTD = contextPathESTD;
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -21,54 +27,58 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(contextPath, express.static(path.join(__dirname, 'public')));
+app.use(contextPathPDI, express.static(path.join(__dirname, 'public')));
+app.use(contextPathPAS, express.static(path.join(__dirname, 'public')));
+app.use(contextPathESTD, express.static(path.join(__dirname, 'public')));
+
+
 
 app.use('/', indexRouter);
 
 app.use('/users', usersRouter);
 
 //Menu Lateral PDI
-app.get("/pdi/static-button-gestiondoc", (req, res) => {
+app.get( contextPathPDI + "/static-button-gestiondoc", (req, res) => {
   res.sendFile('./button-static-gestiondoc-PDI.js', {root: __dirname});
 });
-app.get("/pdi/static-button", (req, res) => {
+app.get(contextPathPDI +"/static-button", (req, res) => {
   res.sendFile('./button-static-parking-PDI.js', {root: __dirname});
 });
 //Menu Lateral PAS
-app.get("/pas/static-button", (req, res) => {
+app.get(contextPathPAS +"/static-button", (req, res) => {
   res.sendFile('./button-static-parking-PAS.js', {root: __dirname});
 });
 //Menus Laterales Estudiantes
-app.get("/estudiantes/static-button", (req, res) => {
+app.get(contextPathESTD+"/static-button", (req, res) => {
   res.sendFile('./button-static-parking-ESTD.js', {root: __dirname});
 });
-app.get("/estudiantes/static-button-intercontac", (req, res) => {
+app.get(contextPathESTD+"/static-button-intercontac", (req, res) => {
   res.sendFile('./button-static-intercontacta-ESTD.js', {root: __dirname});
 });
 
 //styles para pas -estudiantes
-app.get("/pas/stylesheets/style.css", function(req, res, next) {
+app.get(contextPathPAS +"/stylesheets/style.css", function(req, res, next) {
   res.sendFile('./public/stylesheets/style.css', {root: __dirname});
 });
 
-app.get("/estudiantes/stylesheets/style.css", function(req, res, next) {
+app.get(contextPathESTD +"/stylesheets/style.css", function(req, res, next) {
   res.sendFile('/public/stylesheets/style.css', {root: __dirname});
 });
 
 //fotos para logo etsit
-app.get("/pas/images/logo-etsit.gif", function(req, res, next) {
+app.get(contextPathPAS+ "/images/logo-etsit.gif", function(req, res, next) {
   res.sendFile('/public/images/logo-etsit.gif', {root: __dirname});
 });
-app.get("/estudiantes/images/logo-etsit.gif", function(req, res, next) {
+app.get(contextPathESTD+ "/images/logo-etsit.gif", function(req, res, next) {
   res.sendFile('/public/images/logo-etsit.gif', {root: __dirname});
 });
 
 //fotos para logo upm
-app.get("/pas/images/logo-upm.gif", function(req, res, next) {
+app.get(contextPathPAS +"/images/logo-upm.gif", function(req, res, next) {
   res.sendFile('/public/images/logo-upm.gif', {root: __dirname});
 });
 
-app.get("/estudiantes/images/logo-upm.gif", function(req, res, next) {
+app.get(contextPathESTD +"/images/logo-upm.gif", function(req, res, next) {
   res.sendFile('/public/images/logo-upm.gif', {root: __dirname});
 });
 

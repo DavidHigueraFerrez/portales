@@ -1,14 +1,12 @@
 var express = require('express');
 var router = express.Router();
 
-
-const local =true;
-
-const contextPathPDI = local === true ? '/portal-pdi/': process.env.CONTEXTOPDI
-const contextPathPAS = local === true ? '/portal-pas/': process.env.CONTEXTOPAS
-const contextPathESTD = local === true ? '/portal-estudiantes/': process.env.CONTEXTOESTD
+const normalize = require('normalize-path');
 
 
+const contextPathPDI = normalize(process.env.CONTEXTOPDI || '/portal-pdi/');
+const contextPathPAS = normalize(process.env.CONTEXTOPAS || '/portal-pas/');
+const contextPathESTD =normalize(process.env.CONTEXTOESTD || '/portal-estudiantes/');
 
 router.get('/', function(req, res) {
   res.json({ message: 'hooray! welcome to our rest video api!' });  
@@ -16,6 +14,7 @@ router.get('/', function(req, res) {
 
 console.log('entra index');
 router.get(contextPathPDI, function(req, res, next) {
+   console.log('probelma-1');
   res.render('index-PDI', { title: 'Express' });
 });
 router.get(contextPathPAS, function(req, res, next) {
@@ -26,3 +25,4 @@ router.get(contextPathESTD, function(req, res, next) {
 });
 
 module.exports = router;
+

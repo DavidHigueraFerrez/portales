@@ -26,7 +26,7 @@ services:
 
 ### Configuracion de seleccion de portal
 
-En parametros que recibe para la creacion del portal para indicar los contextos de acceso a los diferentes portales.
+Los parametros que recibe para la creacion del portal para indicar los contextos de acceso a los diferentes portales
 
 `portal.env`
 
@@ -102,3 +102,4 @@ docker-compose -f docker-compose.yml -f ../portal.prod.yml up -d
 [Variables de entorno desde `docker-compose.ym`](https://docs.docker.com/compose/environment-variables/)
 [Contenedor postgres](https://hub.docker.com/_/postgres/)
 [Problemas con variables de entorno en el contenedor postgres](https://github.com/docker-library/postgres/issues/203)
+

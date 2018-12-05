@@ -84,6 +84,14 @@ app.get(contextPathESTD +"/images/logo-upm.gif", function(req, res, next) {
   res.sendFile('/public/images/logo-upm.gif', {root: __dirname});
 });
 
+//fotos para foto edificio A 
+app.get(contextPathPAS +"/images/portada-escuela.jpg", function(req, res, next) {
+  res.sendFile('/public/images/portada-escuela.jpg', {root: __dirname});
+});
+
+app.get(contextPathESTD +"/images/portada-escuela.jpg", function(req, res, next) {
+  res.sendFile('/public/images/portada-escuela.jpg', {root: __dirname});
+});
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

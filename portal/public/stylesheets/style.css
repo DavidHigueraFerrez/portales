@@ -7,6 +7,9 @@ a {
   color: #00B7FF;
 }
 
+#portal-texto{
+  font-size: 1.75em;
+}
 #banner{
   background-color: #FF0000;
   margin-bottom: 10px;

@@ -59,7 +59,6 @@ https://portal.etsit.upm.es/estudiantes/static-button
 
 
 
-https://portal.etsit.upm.es/estudiantes/static-button-intercontacta
 
 ### Insertar Menu Lateral en el resto de aplicaciones
 1º Insertar el script disponible en https://portal.etsit.upm.es/pdi/button-static.js 
@@ -78,12 +77,16 @@ Ejemplo
  <div id="buttonStatic"></div>
 ```
 
-3º Llamar a la funcion dibujarMenuLateral("buttonStatic"); indicando el id del div donde quieres añadir el menu. Ademas debes cambiar "contexto-logout-cas" por la ruta de contexto de logout que tenias donde tenias antes el boton de cerrar sesion.
+3º OPCION Con jquery - Llamar a la funcion dibujarMenuLateral("buttonStatic"); indicando el id del div donde quieres añadir el menu. Ademas debes cambiar "contexto-logout-cas" por la ruta de contexto de logout que tenias donde tenias antes el boton de cerrar sesion.
 
 ```
 $(document).ready(function(){
     dibujarmenulateral("buttonStatic","contexto-logout-cas");
 });
+```
+4ºOPCION Sin jquery - Si se quiere integrar en una aplicacion que no disponga de jquery.
+```
+    document.addEventListener('DOMContentLoaded', dibujarmenulateral("buttonStatic","contexto-logout-cas"), false);
 ```
 
 ## Ejecución en producción

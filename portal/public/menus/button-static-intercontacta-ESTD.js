@@ -1,9 +1,6 @@
 let a = 
 '<div>'+
 '<style>'+
-'body {'+
-'    font-family: "Lato", sans-serif;'+
-'}'+
 ''+
 '.sidenav-2-d9f2c5a7e3da2e5fa5423cc19ea5a8b5 {'+
 '    height: 100%;'+
@@ -35,14 +32,14 @@ let a =
 '    color: #4664A2;'+
 '}'+
 ''+
-'.sidenav-2-d9f2c5a7e3da2e5fa5423cc19ea5a8b5 .closebtn {'+
+'.sidenav-2-d9f2c5a7e3da2e5fa5423cc19ea5a8b5 .closebtn1234 {'+
 '    position: absolute;'+
 '    top: 0;'+
 '    right: 25px;'+
 '    font-size: 36px;'+
 '    margin-left: 50px;'+
 '}'+
-'.open-6659b527b8d152af596e174303b316a7 {'+
+'.open-6659b527b8d152af596e174303b316a7  {'+
 '    position: absolute;'+
 '    top: 0;'+
 '    right: 25px;'+
@@ -56,16 +53,16 @@ let a =
 '}'+
 '</style>'+
 ''+
-'<div id="mySidenav" class="sidenav-2-d9f2c5a7e3da2e5fa5423cc19ea5a8b5">'+
+'<div id="06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05" class="sidenav-2-d9f2c5a7e3da2e5fa5423cc19ea5a8b5">'+
 '    <div>'+
 '        <a><h4 href="https://portal.etsit.upm.es/estudiantes" style="color:#FFFF;">Portal Estudiantes</h4></a>'+
-'        <a href="/progdoc/logout">Cerrar Sesion</a>'+
+'        <a href="#" id="closeButton6966dbce83d6bd9a2c367f1d2b0bbf25">Cerrar Sesion</a>'+ 
 '    </div>'+
 '    <hr>'+
 '    <div>'+
 '        <a><h4 style="color:#FFFF;">Aplicaciones Federadas</h4></a>'+
 '    </div>'+
-'    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>'+
+'  <a href="javascript:void(0)" class="closebtn1234" onclick="closeNav06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05()">×</a>'+
 '    <a href="https://appsrv.etsit.upm.es/ofic-inter">Oficina Internacional</a>'+
 '    <a href="https://appsrv.etsit.upm.es/ofic-inter-contact">InterContacta</a>'+
 '    <a href="https://appsrv.etsit.upm.es/docencia/tft">Aplicacion TFT</a>'+
@@ -80,12 +77,10 @@ let a =
 '        <a href="https://webmail.etsit.upm.es/rc/v2/">Webmail</a>'+
 '        <a href="https://moodle.upm.es/">Moodle Upm</a>'+
 '    </div>'+
-''+
 '</div>'+
 ''+
-'<span class="open-6659b527b8d152af596e174303b316a7" style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>'+
+'<span class="open-6659b527b8d152af596e174303b316a7 " style="font-size:30px;cursor:pointer" onclick="openNav06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05()">☰</span>'+
 '</div>';
-
 
 function openNav06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05() {
     document.getElementById("06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05").style.width = "250px";
@@ -95,7 +90,9 @@ function closeNav06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e0
     document.getElementById("06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05").style.width = "0";
 }
 
-function dibujarmenulateral(id){
+function dibujarmenulateral(id,logoutcontext){
     console.log(id);
     document.getElementById(id).innerHTML = a;
+ 	document.getElementById("closeButton6966dbce83d6bd9a2c367f1d2b0bbf25").href = logoutcontext; 
 }
+

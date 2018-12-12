@@ -4,9 +4,9 @@ var router = express.Router();
 const normalize = require('normalize-path');
 
 
-const contextPathPDI = normalize(process.env.CONTEXTOPDI || '/portal-pdi/');
-const contextPathPAS = normalize(process.env.CONTEXTOPAS || '/portal-pas/');
-const contextPathESTD =normalize(process.env.CONTEXTOESTD || '/portal-estudiantes/');
+const contextPathPDI = normalize(process.env.CONTEXTOPDI || '/pdi/');
+const contextPathPAS = normalize(process.env.CONTEXTOPAS || '/pas/');
+const contextPathESTD =normalize(process.env.CONTEXTOESTD || '/estudiantes/');
 
 router.get('/', function(req, res) {
   res.json({ message: 'hooray! welcome to our rest video api!' });  

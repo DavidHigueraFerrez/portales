@@ -6,6 +6,11 @@ body {
 a {
   color: #00B7FF;
 }
+.imagen-portada img {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
 
 #portal-texto{
   font-size: 1.75em;

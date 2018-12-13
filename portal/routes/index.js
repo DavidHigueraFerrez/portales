@@ -3,6 +3,7 @@ var router = express.Router();
 
 const normalize = require('normalize-path');
 
+const contextPruebas = process.env.PRUEBAS || true;
 
 const contextPathPDI = normalize(process.env.CONTEXTOPDI || '/pdi/');
 const contextPathPAS = normalize(process.env.CONTEXTOPAS || '/pas/');
@@ -14,14 +15,23 @@ router.get('/', function(req, res) {
 
 console.log('entra index');
 router.get(contextPathPDI, function(req, res, next) {
-   console.log('probelma-1');
-  res.render('index-PDI', { title: 'Express' });
+   console.log('problema-1');
+  res.render('index-PDI', { 
+    title: 'Express',
+    contextPruebas : contextPruebas
+  });
 });
 router.get(contextPathPAS, function(req, res, next) {
-  res.render('index-PAS', { title: 'Express' });
+  res.render('index-PAS', {
+     title: 'Express',
+     contextPruebas : contextPruebas 
+    });
 });
 router.get(contextPathESTD, function(req, res, next) {
-  res.render('index-ESTD', { title: 'Express' });
+  res.render('index-ESTD', {
+     title: 'Express',
+     contextPruebas : contextPruebas 
+    });
 });
 
 module.exports = router;

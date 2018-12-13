@@ -13,50 +13,54 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+  <script src="https://pruebas.etsit.upm.es/estudiantes/static-button"></script>
   <title>Portal del Estudiante</title>
 </head>
 <body>	
-      <% let desarrallo = true; %>
-      <% if(desarrallo === true){ %>
-      <div id="banner" class="row">
-        <div class="col-sm-2" >
-            <br>
-            <a href="http://www.upm.es/"><img src="./images/logo-upm.gif" width="70"></a>
-            <a href="http://www.etsit.upm.es/"><img src="./images/logo-etsit.gif" width="70"></a>
+        <% if(contextPruebas === true){ %>
+        <div id="banner" class="row">
+          <div class="col-sm-2" >
+              <br>
+              <a href="http://www.upm.es/"><img src="./images/logo-upm.gif" width="70"></a>
+              <a href="http://www.etsit.upm.es/"><img src="./images/logo-etsit.gif" width="70"></a>
+          </div>
+          <div class="col-sm-9" >
+              <h3 id="title-portal-1">Portal de Estudiantes - Portal en Desarrollo</h3>
+              <h4 id="title-portal-2"> <a id ="etsit" href="http://www.etsit.upm.es/">Escuela Técnica Superior de Ingenieros de Telecomunicaciones</a> de la <a id="upm" href="http://www.upm.es/"> Universidad Politécnica de Madrid</a> </h4>
+          </div>
+          <div id ="gestionAplicaciones"class="col-sm-1">
+
+          </div>
         </div>
-        <div class="col-sm-9" >
-            <h3 id="title-portal-1">Portal de Estudiantes - Portal en Desarrollo</h3>
-            <h4 id="title-portal-2"> <a id ="etsit" href="http://www.etsit.upm.es/">Escuela Técnica Superior de Ingenieros de Telecomunicaciones</a> de la <a id="upm" href="http://www.upm.es/"> Universidad Politécnica de Madrid</a> </h4>
+        <% } else {%>
+        <div id="main-header" class="row">
+          <div class="col-sm-2" >
+              <br>
+              <a href="http://www.upm.es/"><img src="./images/logo-upm.gif" width="70"></a>
+              <a href="http://www.etsit.upm.es/"><img src="./images/logo-etsit.gif" width="70"></a>
+          </div>
+          <div class="col-sm-9" >
+              <h3 id="title-portal-1">Portal de Estudiantes</h3>
+              <h4 id="title-portal-2"> <a id ="etsit" href="http://www.etsit.upm.es/">Escuela Técnica Superior de Ingenieros de Telecomunicaciones</a> de la <a id="upm" href="http://www.upm.es/"> Universidad Politécnica de Madrid</a> </h4>
+          </div>
+          <div id ="gestionAplicaciones"class="col-sm-1">
+
+          </div>
         </div>
-        <div id ="gestionAplicaciones"class="col-sm-1">
-        <% include gestionAplicaciones-ESTD.ejs %> 
+        <% } %>
+        <div class="portal-texto">
+          <h2>Bienvenido</h2>
+          <p>Desde este portal podras acceder a las diferentes aplicaciones para los estudiantes</p>
+          
+          <p>El boton de acceso de las aplicaciones es &#9776; , desde ahi podra acceder a las aplicaciones de los estudiantes</p> 
         </div>
-      </div>
-      <% } else {%>
-      <div id="main-header" class="row">
-        <div class="col-sm-2" >
-            <br>
-            <a href="http://www.upm.es/"><img src="./images/logo-upm.gif" width="70"></a>
-            <a href="http://www.etsit.upm.es/"><img src="./images/logo-etsit.gif" width="70"></a>
+        <div class="imagen-portada row">
+          <div class="col-sm-12"><img src="./images/portada-escuela.jpg"></div>
         </div>
-        <div class="col-sm-9" >
-            <h3 id="title-portal-1">Portal de Estudiantes</h3>
-            <h4 id="title-portal-2"> <a id ="etsit" href="http://www.etsit.upm.es/">Escuela Técnica Superior de Ingenieros de Telecomunicaciones</a> de la <a id="upm" href="http://www.upm.es/"> Universidad Politécnica de Madrid</a> </h4>
-        </div>
-        <div id ="gestionAplicaciones"class="col-sm-1">
-        <% include gestionAplicaciones-ESTD.ejs %> 
-        </div>
-      </div>
-      <% } %>
-      <div class="portal-texto">
-        <h2>Bienvenido</h2>
-        <p>Desde este portal podras acceder a las diferentes aplicaciones para los estudiantes</p>
-        
-        <p>El boton de acceso de las aplicaciones es &#9776; , desde ahi podra acceder a las aplicaciones de los estudiantes</p> 
-      </div>
-      <div class="imagen-portada row">
-        <div class="col-sm-12"><img src="./images/portada-escuela.jpg"></div>
-      </div>
-      
 </body>
+<script>
+$(document).ready(function(){
+    dibujarmenulateral("gestionAplicaciones","/progdoc/logout");
+});
+</script>
 </html>

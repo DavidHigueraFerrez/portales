@@ -11,7 +11,7 @@ const normalize = require('normalize-path');
 
 var app = express();
 
-const local = true;
+const contextPruebas = process.env.PRUEBAS || true;
 
 const contextPathPDI = normalize(process.env.CONTEXTOPDI || '/pdi/');
 const contextPathPAS = normalize(process.env.CONTEXTOPAS || '/pas/');
@@ -21,6 +21,7 @@ const contextPathESTD =normalize(process.env.CONTEXTOESTD || '/estudiantes/');
 exports.contextPathPDI = contextPathPDI;
 exports.contextPathPAS = contextPathPAS;
 exports.contextPathESTD = contextPathESTD;
+exports.contextPruebas = contextPruebas;
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -38,25 +39,51 @@ app.use('/', indexRouter);
 
 app.use('/users', usersRouter);
 
-//Menu Lateral PDI
-app.get( contextPathPDI + "/static-button-gestiondoc", (req, res) => {
- res.sendFile('./public/menus/button-static-gestiondoc-PDI.js', {root: __dirname}); 
-});
+//contexto de aplicaciones para desplegadas en pruebas (pre-produccion)
+if(contextPruebas===true){
+  //Menu Lateral PDI
+  app.get( contextPathPDI + "/static-button-gestiondoc", (req, res) => {
+  res.sendFile('./public/menus/pruebas/button-static-gestiondoc-PDI.js', {root: __dirname}); 
+  });
 
-app.get(contextPathPDI +"/static-button", (req, res) => {
-  res.sendFile('./public/menus/button-static-parking-PDI.js', {root: __dirname});
-});
-//Menu Lateral PAS
-app.get(contextPathPAS +"/static-button", (req, res) => {
-  res.sendFile('./public/menus/button-static-parking-PAS.js', {root: __dirname});
-});
-//Menus Laterales Estudiantes
-app.get(contextPathESTD+"/static-button", (req, res) => {
-  res.sendFile('./public/menus/button-static-parking-ESTD.js', {root: __dirname});
-});
-app.get(contextPathESTD+"/static-button-intercontac", (req, res) => {
-  res.sendFile('./public/menus/button-static-intercontacta-ESTD.js', {root: __dirname});
-});
+  app.get(contextPathPDI +"/static-button", (req, res) => {
+    res.sendFile('./public/menus/pruebas/button-static-parking-PDI.js', {root: __dirname});
+  });
+  //Menu Lateral PAS
+  app.get(contextPathPAS +"/static-button", (req, res) => {
+    res.sendFile('./public/menus/pruebas/button-static-parking-PAS.js', {root: __dirname});
+  });
+  //Menus Laterales Estudiantes
+  app.get(contextPathESTD+"/static-button", (req, res) => {
+    res.sendFile('./public/menus/pruebas/button-static-parking-ESTD.js', {root: __dirname});
+  });
+  app.get(contextPathESTD+"/static-button-intercontac", (req, res) => {
+    res.sendFile('./public/menus/pruebas/button-static-intercontacta-ESTD.js', {root: __dirname});
+  });
+
+//contexto para aplicaciones desplegadas en produccion
+}else{
+  //Menu Lateral PDI
+  app.get( contextPathPDI + "/static-button-gestiondoc", (req, res) => {
+    res.sendFile('./public/menus/produccion/button-static-gestiondoc-PDI.js', {root: __dirname}); 
+    });
+  
+    app.get(contextPathPDI +"/static-button", (req, res) => {
+      res.sendFile('./public/menus/produccion/button-static-parking-PDI.js', {root: __dirname});
+    });
+    //Menu Lateral PAS
+    app.get(contextPathPAS +"/static-button", (req, res) => {
+      res.sendFile('./public/menus/produccion/button-static-parking-PAS.js', {root: __dirname});
+    });
+    //Menus Laterales Estudiantes
+    app.get(contextPathESTD+"/static-button", (req, res) => {
+      res.sendFile('./public/menus/produccion/button-static-parking-ESTD.js', {root: __dirname});
+    });
+    app.get(contextPathESTD+"/static-button-intercontac", (req, res) => {
+      res.sendFile('./public/menus/produccion/button-static-intercontacta-ESTD.js', {root: __dirname});
+    });
+}
+  
 
 //styles para pas -estudiantes
 app.get(contextPathPAS +"/stylesheets/style.css", function(req, res, next) {

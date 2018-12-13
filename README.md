@@ -26,11 +26,12 @@ services:
 
 ### Configuracion de seleccion de portal
 
-Los parametros que recibe para la creacion del portal para indicar los contextos de acceso a los diferentes portales
+Los parametros que recibe para la creacion del portal para indicar los contextos de acceso a los diferentes portales, indicar si PRUEBAS 'true' el menu despliega sobre las aplicaciones de pruebas, si PRUEBAS 'false' el menu despliega sobre las aplicaciones en produccion
 
 `portal.env`
 
 ```
+PRUEBAS=false
 CONTEXTOPDI=/pdi/
 CONTEXTOPAS=/pas/
 CONTEXTOESTD=/estudiantes/

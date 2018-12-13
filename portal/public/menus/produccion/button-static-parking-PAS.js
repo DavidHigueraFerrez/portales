@@ -63,11 +63,13 @@ let a =
 '        <a><h4 style="color:#FFFF;">Aplicaciones Federadas</h4></a>'+
 '    </div>'+
 '  <a href="javascript:void(0)" class="closebtn1234" onclick="closeNav06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05()">×</a>'+
-'    <a href="https://appsrv.etsit.upm.es/parking">Aplicación Parking</a>'+
-'    <a href="https://portal.etsit.upm.es/pdi/progdoc/">Aplicación programación docente</a>'+
-'    <a href="https://appsrv.etsit.upm.es/docencia/tft">Aplicación TFT</a>'+
 '    <a href="https://appsrv.etsit.upm.es/ofic-inter/home.htm">Aplicación Internacional</a>'+
 '    <a href="https://appsrv.etsit.upm.es/ofic-inter-contact">Aplicación InterContacta</a>'+
+'    <a href="https://appsrv.etsit.upm.es/parking">Aplicación Parking</a>'+
+'    <a href="https://appsrv.etsit.upm.es/practicas/home.htm">Aplicación Prácticas</a>'+
+'    <a href="https://portal.etsit.upm.es/pdi/progdoc/">Aplicación Programación Docente</a>'+
+'    <a href="https://appsrv.etsit.upm.es/docencia/tft">Aplicación TFT</a>'+
+'    <a class="url-aplicacion" href="https://dev.etsit.upm.es/ofic-inter-contact">Listin Telefónico</a>'+
 '    <hr>'+
 '    <div>'+
 '        <a><h4 style="color:#FFFF;">Otras Aplicaciones</h4></a>'+

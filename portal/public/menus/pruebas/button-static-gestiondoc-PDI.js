@@ -46,6 +46,10 @@ let a =
 '    font-size: 36px;'+
 '    margin-left: 50px;'+
 '}'+
+'.banner-pruebas12345 a{'+
+'  background-color: #FF0000;'+
+'    color:#FFFF;'+
+'}'+
 ''+
 '@media screen and (max-height: 450px) {'+
 '  .sidenav {padding-top: 15px;}'+
@@ -54,9 +58,11 @@ let a =
 '</style>'+
 ''+
 '<div id="06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05" class="sidenav-2-d9f2c5a7e3da2e5fa5423cc19ea5a8b5">'+
+'<div class="banner-pruebas12345" >'+
+'   <a href="https://pruebas.etsit.upm.es/pdi"><h4 >Portal PDI-Desarrollo </h4></a>'+
+'</div>'+
 '<div>'+
-'   <a href="https://pruebas.etsit.upm.es/pdi" style="color:#FFFF;"><h4 >Portal PDI</h4></a>'+
- '  <a href="#" id="closeButton6966dbce83d6bd9a2c367f1d2b0bbf25">Cerrar Sesion</a>'+ 
+'  <a href="#" id="closeButton6966dbce83d6bd9a2c367f1d2b0bbf25">Cerrar Sesion</a>'+ 
 '</div>'+
 '<hr>'+
 '<div>'+
@@ -102,4 +108,5 @@ function dibujarmenulateral(id,logoutcontext){
     document.getElementById(id).innerHTML = a;
     document.getElementById("closeButton6966dbce83d6bd9a2c367f1d2b0bbf25").href = logoutcontext; 
 }
+
 

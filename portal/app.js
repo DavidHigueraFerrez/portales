@@ -11,7 +11,7 @@ const normalize = require('normalize-path');
 
 var app = express();
 
-const contextPruebas = process.env.PRUEBAS || true;
+const contextPruebas = process.env.PRUEBAS && true;
 
 const contextPathPDI = normalize(process.env.CONTEXTOPDI || '/pdi/');
 const contextPathPAS = normalize(process.env.CONTEXTOPAS || '/pas/');

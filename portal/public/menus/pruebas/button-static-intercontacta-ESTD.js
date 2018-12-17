@@ -54,10 +54,13 @@ let a =
 '</style>'+
 ''+
 '<div id="06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05" class="sidenav-2-d9f2c5a7e3da2e5fa5423cc19ea5a8b5">'+
-'    <div>'+
-'   <a href="https://pruebas.etsit.upm.es/estudiantes" style="color:#FFFF;"><h4 >Portal Estudiantes</h4></a>'+
-'   <a href="#" id="closeButton6966dbce83d6bd9a2c367f1d2b0bbf25">Cerrar Sesion</a>'+ 
-'    </div>'+
+'<div class="banner-pruebas12345" >'+
+'   <a href="https://pruebas.etsit.upm.es/estudiantes"><h4 >Portal Estudiantes-Desarrollo </h4></a>'+
+'</div>'+
+'<div>'+
+'  <a id="name" style="font-size:0.85em;"></a>'+ 
+'  <a href="#" id="closeButton6966dbce83d6bd9a2c367f1d2b0bbf25">Cerrar Sesion</a>'+ 
+'</div>'+
 '    <hr>'+
 '    <div>'+
 '        <a><h4 style="color:#FFFF;">Aplicaciones Federadas</h4></a>'+
@@ -93,9 +96,12 @@ function closeNav06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e0
     document.getElementById("06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05").style.width = "0";
 }
 
-function dibujarmenulateral(id,logoutcontext){
+function dibujarmenulateral(id,logoutcontext,nombre){
     console.log(id);
     document.getElementById(id).innerHTML = a;
- 	document.getElementById("closeButton6966dbce83d6bd9a2c367f1d2b0bbf25").href = logoutcontext; 
+    document.getElementById("closeButton6966dbce83d6bd9a2c367f1d2b0bbf25").href = logoutcontext; 
+    console.log(nombre);
+    if(nombre!==undefined){
+        document.getElementById("name").innerHTML = nombre;
+    }
 }
-

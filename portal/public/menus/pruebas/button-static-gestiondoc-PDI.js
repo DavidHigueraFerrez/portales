@@ -119,3 +119,7 @@ function dibujarmenulateral(id,logoutcontext,mail,nombre){
 }
 
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 44d886627813953c7b7208cfe4fec84b4e0ee18d

@@ -73,7 +73,7 @@ let a =
 '    <a class="url-aplicacion" href="https://appsrv.etsit.upm.es/practicas/home.htm">Aplicación Prácticas</a>'+
 '    <a class="url-aplicacion" href="https://portal.etsit.upm.es/progdoc/">Aplicación Programación Docente</a>'+
 '    <a class="url-aplicacion" href="https://appsrv.etsit.upm.es/docencia/tft">Aplicación TFT</a>'+
-'    <a class="url-aplicacion" href="https://dev.etsit.upm.es/ofic-inter-contact">Listin Telefónico</a>'+
+'    <a class="url-aplicacion" href="https://portal.etsit.upm.es/pdi/directorio_personal">Directorio Personal</a>'+
 '    <hr>'+
 '<div>'+
 '   <a><h4 style="color:#FFFF;">Otras Aplicaciones</h4></a>'+
@@ -113,4 +113,5 @@ function dibujarmenulateral(id,logoutcontext,mail,nombre){
         document.getElementById("full-name-menu").innerHTML = nombre;
     }
 }
+
 

@@ -72,7 +72,7 @@ let a =
 '    <a class="url-aplicacion" href="https://appsrv.etsit.upm.es/practicas/home.htm">Aplicación Prácticas</a>'+
 '    <a class="url-aplicacion" href="https://portal.etsit.upm.es/pdi/progdoc/">Aplicación Programación Docente</a>'+
 '    <a class="url-aplicacion" href="https://appsrv.etsit.upm.es/docencia/tft">Aplicación TFT</a>'+
-'    <a class="url-aplicacion" href="https://dev.etsit.upm.es/ofic-inter-contact">Directorio de Personal</a>'+
+'    <a class="url-aplicacion" href="https://portal.etsit.upm.es/pdi/directorio_personal">Directorio de Personal</a>'+
 '    <hr>'+
 '<div>'+
 '   <a><h4 style="color:#FFFF;">Otras Aplicaciones</h4></a>'+

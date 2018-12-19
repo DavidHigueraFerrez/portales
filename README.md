@@ -26,9 +26,9 @@ services:
 
 ### Configuracion de seleccion de portal
 
-Los parametros que recibe para la creacion del portal para indicar los contextos de acceso a los diferentes portales, indicar si PRUEBAS 'true' el menu despliega sobre las aplicaciones de pruebas, si PRUEBAS 'false' el menu despliega sobre las aplicaciones en produccion
+Los parametros que recibe para la creacion del portal para indicar los contextos de acceso a los diferentes portales, indicar si PRUEBAS 'true' el menu despliega sobre las aplicaciones de pruebas, si no se define pruebas se despliega la aplicacion en produccion.
 
-`portal.env`
+`portal.env`  aplicacion en pre-produccion
 
 ```
 PRUEBAS=false
@@ -36,7 +36,13 @@ CONTEXTOPDI=/pdi/
 CONTEXTOPAS=/pas/
 CONTEXTOESTD=/estudiantes/
 ```
+`portal.env`  aplicacion en produccion
 
+```
+CONTEXTOPDI=/pdi/
+CONTEXTOPAS=/pas/
+CONTEXTOESTD=/estudiantes/
+```
 
 ## Menus laterales que se sirven desde el portal
 
@@ -78,16 +84,17 @@ Ejemplo
  <div id="buttonStatic"></div>
 ```
 
-3º OPCION Con jquery - Llamar a la funcion dibujarMenuLateral("buttonStatic"); indicando el id del div donde quieres añadir el menu. Ademas debes cambiar "contexto-logout-cas" por la ruta de contexto de logout que tenias donde tenias antes el boton de cerrar sesion.
+3º OPCION Con jquery - Llamar a la funcion dibujarMenuLateral(); indicando el id del div donde quieres añadir el menu. Ademas debes cambiar "contexto-logout-cas" por la ruta de contexto de logout que tenias donde tenias antes el boton de cerrar sesion.
+Los otros 2 parametros son si se quiere mostrar en el menu lateral el nombre de la persona logeada y el dominio que tiene(@upm o @alumnos.upm.es), se han de pasar 1ºero el contexto del mail y 2º el nombre de la persona
 
 ```
 $(document).ready(function(){
-    dibujarmenulateral("buttonStatic","contexto-logout-cas");
+    dibujarmenulateral("buttonStatic","contexto-logout-cas","contexto-mail","nombre-usuario");
 });
 ```
 4ºOPCION Sin jquery - Si se quiere integrar en una aplicacion que no disponga de jquery.
 ```
-    document.addEventListener('DOMContentLoaded', dibujarmenulateral("buttonStatic","contexto-logout-cas"), false);
+    document.addEventListener('DOMContentLoaded', dibujarmenulateral("buttonStatic","contexto-logout-cas","contexto-mail","nombre-usuario"), false);
 ```
 
 ## Ejecución en producción

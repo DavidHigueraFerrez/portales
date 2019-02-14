@@ -48,7 +48,7 @@ let a =
 '}'+
 '.banner-pruebas12345 a{'+
 '  background-color: #FF0000;'+
-'    color:#FFFF;'+
+'    color:#FFFFFF;'+
 '}'+
 ''+
 '@media screen and (max-height: 450px) {'+
@@ -69,7 +69,7 @@ let a =
 '</div>'+
 '<hr>'+
 '<div>'+
-'  <a><h4 style="color:#FFFF;">Aplicaciones Federadas</h4></a>'+
+'  <a><h4 style="color:#FFFF;">Aplicaciones Docentes</h4></a>'+
 '</div>'+
 '  <a href="javascript:void(0)" class="closebtn1234" onclick="closeNav06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05()">×</a>'+
 '    <a class="url-aplicacion" href="https://appsrv.etsit.upm.es/ofic-inter/home.htm">Aplicación Internacional</a>'+
@@ -80,17 +80,18 @@ let a =
 '    <a class="url-aplicacion" href="https://dev.etsit.upm.es/ofic-inter-contact">Directorio de Personal</a>'+
 '    <hr>'+
 '<div>'+
-'   <a><h4 style="color:#FFFF;">Otras Aplicaciones</h4></a>'+
+'   <a><h4 style="color:#FFFF;">Servicios Generales</h4></a>'+
 '</div>'+
 '    <div>'+
-'        <a href="https://www.upm.es/apolo/login.upm">Aplicación de APOLO</a>'+
-'        <a href="http://www.etsit.upm.es/escuela/unidades-administrativas-y-servicios/incidencias-caus.html">CAUs</a>'+
-'        <a href="https://www.upm.es/gauss/">Guías Docente (GAUSS)</a>'+
+'        <a href="https://www.upm.es/apolo/login.upm">Actas y Calificaciones (APOLO)</a>'+
+'        <a href="http://www.etsit.upm.es/escuela/unidades-administrativas-y-servicios/incidencias-caus.html">Incidencias (CAUs)</a>'+
+'        <a href="https://www.upm.es/gauss/">Guías Docentes (GAUSS)</a>'+
 '        <a href="https://goleta.etsit.upm.es/actas/">Listas de clase</a>'+
-'        <a href="https://moodle.upm.es/">Moodle Upm</a>'+
+'        <a href="https://moodle.upm.es/">Moodle UPM</a>'+
 '        <a href="http://www.etsit.upm.es/footer-columnas4/personal/politecnica-virtual.html">Politécnica Virtual</a>'+
 '        <a href="https://www.etsit.upm.es/escuela/unidades-administrativas-y-servicios/reserva-de-espacios.html">Reserva de Espacios</a>'+
-'        <a href="https://webmail.etsit.upm.es/rc/v2/">Webmail</a>'+
+'        <a href="https://webmail.etsit.upm.es/rc/v2/">Webmail (ETSIT)</a>'+
+'        <a href="https://www.upm.es/webmail_personal/">Webmail (UPM)</a>'+
 '    </div>'+
 '</div>'+
 ''+
@@ -118,8 +119,3 @@ function dibujarmenulateral(id,logoutcontext,mail,nombre){
     }
 }
 
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 44d886627813953c7b7208cfe4fec84b4e0ee18d

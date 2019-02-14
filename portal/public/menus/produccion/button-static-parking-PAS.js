@@ -18,7 +18,7 @@ let a =
 '.sidenav-2-d9f2c5a7e3da2e5fa5423cc19ea5a8b5 a {'+
 '    padding: 6px 8px 6px 32px;'+
 '      text-decoration: none !important;'+
-'      color: #FFFF;;'+
+'      color: #FFFFFF;'+
 '      display: block;'+
 '      border: none;'+
 '      background: none;'+
@@ -64,11 +64,11 @@ let a =
 '</div>'+
 '    <hr>'+
 '    <div>'+
-'        <a><h4 style="color:#FFFF;">Aplicaciones Federadas</h4></a>'+
+'        <a><h4 style="color:#FFFF;">Aplicaciones Docentes</h4></a>'+
 '    </div>'+
 '  <a href="javascript:void(0)" class="closebtn1234" onclick="closeNav06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05()">×</a>'+
 '    <a href="https://appsrv.etsit.upm.es/ofic-inter/home.htm">Aplicación Internacional</a>'+
-'    <a href="https://appsrv.etsit.upm.es/ofic-inter-contact">Aplicación InterContacta</a>'+
+'    <a href="https://portal.etsit.upm.es/pas/ofic-inter-contact/admin">Aplicación InterContacta</a>'+
 '    <a href="https://appsrv.etsit.upm.es/parking">Aplicación Parking</a>'+
 '    <a href="https://appsrv.etsit.upm.es/practicas/home.htm">Aplicación Prácticas</a>'+
 '    <a href="https://portal.etsit.upm.es/pdi/progdoc/">Aplicación Programación Docente</a>'+
@@ -76,13 +76,14 @@ let a =
 '    <a href="https://portal.etsit.upm.es/pas/directorio_personal">Directorio Personal</a>'+
 '    <hr>'+
 '    <div>'+
-'        <a><h4 style="color:#FFFF;">Otras Aplicaciones</h4></a>'+
+'        <a><h4 style="color:#FFFF;">Servicios Generales</h4></a>'+
 '    </div>'+
 '    <div>'+
-'        <a href="http://www.etsit.upm.es/escuela/unidades-administrativas-y-servicios/incidencias-caus.html">CAUs</a>'+
+'        <a href="http://www.etsit.upm.es/escuela/unidades-administrativas-y-servicios/incidencias-caus.html">Incidencias (CAUs)</a>'+
 '        <a href="http://www.etsit.upm.es/footer-columnas4/personal/politecnica-virtual.html">Politécnica Virtual</a>'+
 '        <a href="https://www.etsit.upm.es/escuela/unidades-administrativas-y-servicios/reserva-de-espacios.html">Reserva de Espacios</a>'+
-'        <a href="https://webmail.etsit.upm.es/rc/v2/">Webmail</a>'+
+'        <a href="https://webmail.etsit.upm.es/rc/v2/">Webmail (ETSIT)</a>'+
+'        <a href="https://www.upm.es/webmail_personal/">Webmail (UPM)</a>'+
 '    </div>'+
 '</div>'+
 ''+

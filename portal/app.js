@@ -9,18 +9,25 @@ var usersRouter = require('./routes/users');
 
 const normalize = require('normalize-path');
 
+//inicializacion sequelize
+//let models = require('./models/menusLaterales');
+let models = require('./public/models');
+let Sequelize = require('sequelize');
 var app = express();
+
 
 const contextPruebas = process.env.PRUEBAS && true;
 
 const contextPathPDI = normalize(process.env.CONTEXTOPDI || '/pdi/');
 const contextPathPAS = normalize(process.env.CONTEXTOPAS || '/pas/');
 const contextPathESTD =normalize(process.env.CONTEXTOESTD || '/estudiantes/');
+const contextPathADMIN =normalize(process.env.CONTEXTOAMIN || '/admin/');
 
 
 exports.contextPathPDI = contextPathPDI;
 exports.contextPathPAS = contextPathPAS;
 exports.contextPathESTD = contextPathESTD;
+exports.contextPathADMIN = contextPathADMIN;
 exports.contextPruebas = contextPruebas;
 
 // view engine setup
@@ -35,6 +42,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(contextPathPDI, express.static(path.join(__dirname, 'public')));
 app.use(contextPathPAS, express.static(path.join(__dirname, 'public')));
 app.use(contextPathESTD, express.static(path.join(__dirname, 'public')));
+app.use(contextPathADMIN, express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 
 app.use('/users', usersRouter);

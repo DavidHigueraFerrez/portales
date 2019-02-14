@@ -18,7 +18,7 @@ let a =
 '.sidenav-2-d9f2c5a7e3da2e5fa5423cc19ea5a8b5 a {'+
 '    padding: 6px 8px 6px 32px;'+
 '      text-decoration: none !important;'+
-'      color: #FFFF;;'+
+'      color: #FFFFFF;'+
 '      display: block;'+
 '      border: none;'+
 '      background: none;'+

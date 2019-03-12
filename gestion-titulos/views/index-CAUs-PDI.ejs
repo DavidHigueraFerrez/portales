@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8"> 
+  <!-- Despliegue -->
+  <link rel='stylesheet' type="text/css" href='./stylesheets/style.css' />
+  <link rel='stylesheet' type="text/css" href='./stylesheets/style.css' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+  <title>Portal del Estudiante</title>
+</head>
+<body>	
+        <% if(contextPruebas === true){ %>
+        <script src="https://pruebas.etsit.upm.es/pdi/static-button"></script>
+        <div id="banner" class="row">
+          <div class="col-sm-2" >
+              <br>
+              <a href="http://www.upm.es/"><img src="./images/logo-upm.gif" width="70"></a>
+              <a href="http://www.etsit.upm.es/"><img src="./images/logo-etsit.gif" width="70"></a>
+          </div>
+          <div class="col-sm-9" >
+              <h3 id="title-portal-1">Centro de Atención a Usuarios (Incidencias-CAUS) PDI - En Desarrollo</h3>
+              <h4 id="title-portal-2"> <a id ="etsit" href="http://www.etsit.upm.es/">Escuela Técnica Superior de Ingenieros de Telecomunicaciones</a> de la <a id="upm" href="http://www.upm.es/"> Universidad Politécnica de Madrid</a> </h4>
+          </div>
+          <div id ="gestionAplicaciones"class="col-sm-1">
+
+          </div>
+        </div>
+        <% } else {%>
+        <script src="https://portal.etsit.upm.es/pdi/static-button"></script>
+        <div id="main-header" class="row">
+          <div class="col-sm-2" >
+              <br>
+              <a href="http://www.upm.es/"><img src="./images/logo-upm.gif" width="70"></a>
+              <a href="http://www.etsit.upm.es/"><img src="./images/logo-etsit.gif" width="70"></a>
+          </div>
+          <div class="col-sm-9" >
+              <h3 id="title-portal-1">Centro de Atención a Usuarios (Incidencias-CAUS) PDI</h3>
+              <h4 id="title-portal-2"> <a id ="etsit" href="http://www.etsit.upm.es/">Escuela Técnica Superior de Ingenieros de Telecomunicaciones</a> de la <a id="upm" href="http://www.upm.es/"> Universidad Politécnica de Madrid</a> </h4>
+          </div>
+          <div id ="gestionAplicaciones"class="col-sm-1">
+
+          </div>
+        </div>
+        <% } %>
+        <div class="portal-texto">
+          <h2>Bienvenido</h2>
+            <p>En función de  sus necesidades utilice uno de los siguientes Centros de Atención a Usuarios </p>
+          
+            <p>Seleccione el tipo de incidencia que desea tramitar: </p> 
+
+            <ul>
+                <li><a href="https://cau.etsit.upm.es/">CAU para solicitudes informáticas</a></li>
+                <li><a href="https://caus.etsit.upm.es/">CAU para solicitudes relacionadas con la página web o con mantenimiento</a></li>
+                <li><a href="https://cau-secretaria.etsit.upm.es/">CAU para solicitudes a Secretaría</a></li>
+            </ul> 
+          
+        </div>
+        <div class="imagen-portada row">
+          <div class="col-sm-12"><img src="./images/logo-caus.jpg"></div>
+        </div>
+</body>
+<script>
+$(document).ready(function(){
+    dibujarmenulateral("gestionAplicaciones","/estudiantes/ofic-inter-contact/logout");
+});
+</script>
+</html>
+

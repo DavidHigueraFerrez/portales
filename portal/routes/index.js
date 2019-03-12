@@ -8,6 +8,7 @@ const contextPruebas = process.env.PRUEBAS && true;
 const contextPathPDI = normalize(process.env.CONTEXTOPDI || '/pdi/');
 const contextPathPAS = normalize(process.env.CONTEXTOPAS || '/pas/');
 const contextPathESTD =normalize(process.env.CONTEXTOESTD || '/estudiantes/');
+const contextPathADMIN =normalize(process.env.CONTEXTOADMIN || '/admin/');
 
 router.get('/', function(req, res) {
   res.json({ message: 'hooray! welcome to our rest video api!' });  
@@ -29,6 +30,12 @@ router.get(contextPathPAS, function(req, res, next) {
 });
 router.get(contextPathESTD, function(req, res, next) {
   res.render('index-ESTD', {
+     title: 'Express',
+     contextPruebas : contextPruebas 
+    });
+});
+router.get(contextPathADMIN, function(req, res, next) {
+  res.render('index-Admin', {
      title: 'Express',
      contextPruebas : contextPruebas 
     });

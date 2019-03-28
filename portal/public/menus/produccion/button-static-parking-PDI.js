@@ -57,7 +57,7 @@ let a =
 '<div>'+
 '  <a id="full-name-menu"></a>'+ 
 '  <a id="mail-name-menu"></a>'+ 
-'  <a href="#" id="closeButton6966dbce83d6bd9a2c367f1d2b0bbf25">Cerrar Sesion</a>'+ 
+'  <a href="#" id="closeButton6966dbce83d6bd9a2c367f1d2b0bbf25">Cerrar Sesión</a>'+ 
 '</div>'+
 '<div>'+
 '   <a href="https://portal.etsit.upm.es/pdi"><h4 >Portal PDI </h4></a>'+
@@ -67,19 +67,20 @@ let a =
 '  <a><h4 style="color:#FFFF;">Aplicaciones Docentes</h4></a>'+
 '</div>'+
 '  <a href="javascript:void(0)" class="closebtn1234" onclick="closeNav06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05()">×</a>'+
-'    <a class="url-aplicacion" href="https://appsrv.etsit.upm.es/ofic-inter/home.htm">Aplicación Internacional</a>'+
-'    <a class="url-aplicacion" href="https://appsrv.etsit.upm.es/parking">Aplicación Parking</a>'+
-'    <a class="url-aplicacion" href="https://appsrv.etsit.upm.es/practicas/home.htm">Aplicación Prácticas</a>'+
-'    <a class="url-aplicacion" href="https://portal.etsit.upm.es/pdi/progdoc/">Aplicación Programación Docente</a>'+
-'    <a class="url-aplicacion" href="https://appsrv.etsit.upm.es/docencia/tft">Aplicación TFT</a>'+
+'    <a class="url-aplicacion" href="https://appsrv.etsit.upm.es/ofic-inter/home.htm">Internacional</a>'+
+'    <a class="url-aplicacion" href="https://appsrv.etsit.upm.es/parking">Parking</a>'+
+'    <a class="url-aplicacion" href="https://appsrv.etsit.upm.es/practicas/home.htm">Prácticas</a>'+
+'    <a class="url-aplicacion" href="https://portal.etsit.upm.es/pdi/progdoc/">Programación Docente</a>'+
+'    <a class="url-aplicacion" href="https://appsrv.etsit.upm.es/docencia/tft">TFT</a>'+
 '    <a class="url-aplicacion" href="https://portal.etsit.upm.es/pdi/directorio_personal">Directorio de Personal</a>'+
 '    <hr>'+
 '<div>'+
 '   <a><h4 style="color:#FFFF;">Servicios Generales</h4></a>'+
 '</div>'+
 '    <div>'+
-'        <a href="https://www.upm.es/apolo/login.upm">Actas y Calificaciones (APOLO)</a>'+
-'        <a href="http://www.etsit.upm.es/escuela/unidades-administrativas-y-servicios/incidencias-caus.html">Incidencias (CAUs)</a>'+
+'        <a href="https://www.upm.es/apolo/login.upm">Actas y Calificaciones (APOLO)</a>'
+'        <a href="https://portal.etsit.upm.es/pdi/documentacion">Impresos PDI</a>'++
+'        <a href="https://portal.etsit.upm.es/pdi/caus/">Incidencias (CAUs)</a>'+
 '        <a href="https://www.upm.es/gauss/">Guías Docentes (GAUSS)</a>'+
 '        <a href="https://goleta.etsit.upm.es/actas/">Listas de clase</a>'+
 '        <a href="https://moodle.upm.es/">Moodle UPM</a>'+

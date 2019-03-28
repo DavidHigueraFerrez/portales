@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8"> 
+  <!-- Despliegue -->
+  <link rel='stylesheet' type="text/css" href='./stylesheets/style.css' />
+  <link rel='stylesheet' type="text/css" href='./stylesheets/style.css' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+  <title>Portal del PAS</title>
+</head>
+<body>	
+        <% if(contextPruebas === true){ %>
+        <script src="https://pruebas.etsit.upm.es/pas/static-button"></script>
+        <div id="banner" class="row">
+          <div class="col-sm-2" >
+              <br>
+              <a href="http://www.upm.es/"><img src="./images/logo-upm.gif" width="70"></a>
+              <a href="http://www.etsit.upm.es/"><img src="./images/logo-etsit.gif" width="70"></a>
+          </div>
+          <div class="col-sm-9" >
+              <h3 id="title-portal-1">Documentacion del PAS (Impresos) - En Desarrollo</h3>
+              <h4 id="title-portal-2"> <a id ="etsit" href="http://www.etsit.upm.es/">Escuela Técnica Superior de Ingenieros de Telecomunicaciones</a> de la <a id="upm" href="http://www.upm.es/"> Universidad Politécnica de Madrid</a> </h4>
+          </div>
+          <div id ="gestionAplicaciones"class="col-sm-1">
+
+          </div>
+        </div>
+        <% } else {%>
+        <script src="https://portal.etsit.upm.es/pas/static-button"></script>
+        <div id="main-header" class="row">
+          <div class="col-sm-2" >
+              <br>
+              <a href="http://www.upm.es/"><img src="./images/logo-upm.gif" width="70"></a>
+              <a href="http://www.etsit.upm.es/"><img src="./images/logo-etsit.gif" width="70"></a>
+          </div>
+          <div class="col-sm-9" >
+              <h3 id="title-portal-1">Documentacion del PAS (Impresos)</h3>
+              <h4 id="title-portal-2"> <a id ="etsit" href="http://www.etsit.upm.es/">Escuela Técnica Superior de Ingenieros de Telecomunicaciones</a> de la <a id="upm" href="http://www.upm.es/"> Universidad Politécnica de Madrid</a> </h4>
+          </div>
+          <div id ="gestionAplicaciones"class="col-sm-1">
+
+          </div>
+        </div>
+        <% } %>
+        <div class="portal-texto">
+          <h2>Bienvenido</h2>
+            <p>En función de  sus necesidades utilice uno de los siguientes impresos</p>
+          
+            <p>Seleccione el tipo de impresos que desea: </p> 
+
+            <ul><h4>Solicitud de actualización de incidencias en la Gestión Horaria</h4>
+              <ul>Todas las solicitudes de actualización de incidencias en la Gestión Horaria deben estar firmadas por el interesado y validadas por el Responsable de Unidad/ Sección o Subdirector correspondiente
+                <li>
+                  <a href="http://www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PAS/hoja_incidencias_2019_rellenable.pdf">Solicitud Pdf</a>
+                </li>
+              </ul>
+            </ul>
+
+            <ul><h4>Modificación datos</h4>
+              <ul><h5>Este trámite debe realizarse a través de Politécnica Virtual</h5>
+                <li>
+                  <a href="https://www.upm.es/politecnica_virtual/">Politécnica Virtual</a>
+                </li>
+              </ul>
+            </ul>
+
+            <ul><h4>Solicitud genérica</h4>
+              <ul>Esta solicitud es genérica y sirve para distintas ocasiones. Es importante poner en el pie del documento a quién va dirigida la solicitud. En el formato pdf vienen definidas las opciones más comunes.
+                <li>
+                    <a href="http://www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PAS/solicitud_generica.pdf">Pdf</a>
+                </li>
+                <li>
+                    <a href="www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PAS/solicitud_generica.doc">.Doc</a>
+                </li>
+              </ul>
+            </ul>
+
+            <ul><h4>Solicitud de Compatibilidad</h4>
+              <ul><h5>Es necesario presentar siempre cuatro documentos:</h5>
+                <li>1. Solicitud de compatibilidad con una segunda actividad, ya sea en el sector privado o en el público (son impresos diferentes).</li>
+                <li>2. Certificado de horario en la Escuela.</li>
+                <li>3. Certificado del horario a realizar en la segunda empresa.</li>
+                <li>4. Una vida laboral actualizada.</li>
+
+              </ul>
+              <ul><h5>Impresos</h5>
+                <li>Solicitud de autorización de compatibilidad para el desempeño de un segundo puesto en el sector privado
+                  <a href="http://www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PAS/compatibilidad/Solicitud_Compatibilidad-8.pdf">Pdf rellenable</a>
+                </li>
+                <li>Solicitud de autorización de compatibilidad para el desempeño de un segundo puesto en el sector público
+                  <a href="http://www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PAS/compatibilidad/modelo_solicitud_map.pdf"> Impreso de solicitud del MAP</a>
+                </li>
+                <li>Certificado de horario e informe sobre la solicitud de compatibilidad
+                  <a href="http://www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PAS/compatibilidad/horario_pas.pdf">Pdf rellenable</a>
+                  <a href="www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PAS/compatibilidad/horario_pas.doc">.doc</a>
+                </li>
+              </ul>
+            </ul>
+
+            <ul>
+                <h4>Solicitud contratación temporal
+                <a href="www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PAS/solicitud_contratacion_temporal.doc">(.doc)</a>
+                </h4>   
+            </ul> 
+
+            <ul><h4>Otros impresos UPM para PAS Laboral <a href="http://www.upm.es/Personal/PAS/PASLaboral/Solicitudes">(Enlace a Web UPM)</a></h4>   
+                    
+            </ul> 
+            <ul><h4>Otros impresos UPM para PAS Funcionario <a href="http://www.upm.es/Personal/PAS/PASFuncionario/Solicitudes">(Enlace a Web UPM)</a></h4>   
+                    
+            </ul>
+        </div>
+
+</body>
+<script>
+$(document).ready(function(){
+    dibujarmenulateral("gestionAplicaciones","/estudiantes/ofic-inter-contact/logout");
+});
+</script>
+</html>
+
+

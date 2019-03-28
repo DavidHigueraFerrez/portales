@@ -8,7 +8,10 @@ const contextPruebas = process.env.PRUEBAS && true;
 const contextPathPDI = normalize(process.env.CONTEXTOPDI || '/pdi/');
 const contextPathPAS = normalize(process.env.CONTEXTOPAS || '/pas/');
 const contextPathESTD =normalize(process.env.CONTEXTOESTD || '/estudiantes/');
-const contextPathADMIN =normalize(process.env.CONTEXTOADMIN || '/admin/');
+const contextPathCAUS =normalize(process.env.CONTEXTOCAUS || '/caus/');
+const contextPathPARK =normalize(process.env.CONTEXTOPARK || '/parking/');
+const contextPathDOC =normalize(process.env.CONTEXTODOC || '/documentacion/');
+
 
 router.get('/', function(req, res) {
   res.json({ message: 'hooray! welcome to our rest video api!' });  
@@ -34,8 +37,67 @@ router.get(contextPathESTD, function(req, res, next) {
      contextPruebas : contextPruebas 
     });
 });
-router.get(contextPathADMIN, function(req, res, next) {
-  res.render('index-Admin', {
+
+router.get(contextPathPDI+contextPathCAUS, function(req, res, next) {
+  res.render('index-CAUs-PDI', {
+     title: 'Express',
+     contextPruebas : contextPruebas 
+    });
+});
+
+router.get(contextPathPAS+contextPathCAUS, function(req, res, next) {
+  res.render('index-CAUs-PAS', {
+     title: 'Express',
+     contextPruebas : contextPruebas 
+    });
+});
+
+router.get(contextPathESTD+contextPathCAUS, function(req, res, next) {
+  res.render('index-CAUs-ESTD', {
+     title: 'Express',
+     contextPruebas : contextPruebas 
+    });
+});
+
+//contextos para parking
+router.get(contextPathPDI+contextPathPARK, function(req, res, next) {
+  res.render('index-PARK-PDI', {
+     title: 'Express',
+     contextPruebas : contextPruebas 
+    });
+});
+
+router.get(contextPathPAS+contextPathPARK, function(req, res, next) {
+  res.render('index-PARK-PAS', {
+     title: 'Express',
+     contextPruebas : contextPruebas 
+    });
+});
+
+router.get(contextPathESTD+contextPathPARK, function(req, res, next) {
+  res.render('index-PARK-ESTD', {
+     title: 'Express',
+     contextPruebas : contextPruebas 
+    });
+});
+
+//context path documentacion
+router.get(contextPathPDI+contextPathDOC, function(req, res, next) {
+  res.render('index-DOC-PDI', {
+     title: 'Express',
+     contextPruebas : contextPruebas 
+    });
+});
+
+router.get(contextPathPAS+contextPathDOC, function(req, res, next) {
+  res.render('index-DOC-PAS', {
+     title: 'Express',
+     contextPruebas : contextPruebas 
+    });
+});
+
+router.get(contextPathESTD+contextPathDOC, function(req, res, next) {
+  res.render('index-DOC-ESTD', {
      title: 'Express',
      contextPruebas : contextPruebas 
     });

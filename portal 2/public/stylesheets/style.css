@@ -1,0 +1,86 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.imagen-portada img {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+#portal-texto{
+  font-size: 1.75em;
+}
+#banner{
+  background-color: #FF0000;
+  margin-bottom: 10px;
+}
+
+#titulo-banner{
+  text-align: center;
+}
+
+#main-header {
+  background-color:#4664A2;
+}
+#gestionAplicaciones{
+  color:#FFFFFF;
+}
+#title-portal-1 {
+  color:#FFFFFF;
+}
+#title-portal-2{
+  color:#FFFFFF;
+}
+#etsit{
+  color:#FFFFFF;
+}
+#upm{
+  color:#FFFFFF;
+}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  margin-top: 2.5em;
+  color: #FFFFFF;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+table, td {
+  border: none ;
+}

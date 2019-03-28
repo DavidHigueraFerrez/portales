@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8"> 
+  <!-- Despliegue -->
+  <link rel='stylesheet' type="text/css" href='./stylesheets/style.css' />
+  <link rel='stylesheet' type="text/css" href='./stylesheets/style.css' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+  <title>Portal del PDI</title>
+</head>
+<body>	
+        <% if(contextPruebas === true){ %>
+        <script src="https://pruebas.etsit.upm.es/pdi/static-button"></script>
+        <div id="banner" class="row">
+          <div class="col-sm-2" >
+              <br>
+              <a href="http://www.upm.es/"><img src="./images/logo-upm.gif" width="70"></a>
+              <a href="http://www.etsit.upm.es/"><img src="./images/logo-etsit.gif" width="70"></a>
+          </div>
+          <div class="col-sm-9" >
+              <h3 id="title-portal-1">Documentacion del PDI (Impresos) - En Desarrollo</h3>
+              <h4 id="title-portal-2"> <a id ="etsit" href="http://www.etsit.upm.es/">Escuela Técnica Superior de Ingenieros de Telecomunicaciones</a> de la <a id="upm" href="http://www.upm.es/"> Universidad Politécnica de Madrid</a> </h4>
+          </div>
+          <div id ="gestionAplicaciones"class="col-sm-1">
+
+          </div>
+        </div>
+        <% } else {%>
+        <script src="https://portal.etsit.upm.es/pdi/static-button"></script>
+        <div id="main-header" class="row">
+          <div class="col-sm-2" >
+              <br>
+              <a href="http://www.upm.es/"><img src="./images/logo-upm.gif" width="70"></a>
+              <a href="http://www.etsit.upm.es/"><img src="./images/logo-etsit.gif" width="70"></a>
+          </div>
+          <div class="col-sm-9" >
+              <h3 id="title-portal-1">Documentacion del PDI (Impresos)</h3>
+              <h4 id="title-portal-2"> <a id ="etsit" href="http://www.etsit.upm.es/">Escuela Técnica Superior de Ingenieros de Telecomunicaciones</a> de la <a id="upm" href="http://www.upm.es/"> Universidad Politécnica de Madrid</a> </h4>
+          </div>
+          <div id ="gestionAplicaciones"class="col-sm-1">
+
+          </div>
+        </div>
+        <% } %>
+        <div class="portal-texto">
+          <h2>Bienvenido</h2>
+            <p>En función de  sus necesidades utilice uno de los siguientes impresos</p>
+          
+            <p>Seleccione el tipo de impresos que desea: </p> 
+
+            <ul><h4>Licencias de Viaje</h4>
+              <ul><h5>Licencias de viaje para estancias inferiores a 15 dias</h5>
+                <li>Solicitud de licencia de viaje a países de la Unión Europea
+                  <a href="http://www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/licencias_viaje/licencia_director.pdf">Pdf rellenable</a>
+                  <a href="www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/licencias_viaje/licencia_director.doc">.doc</a>
+                </li>
+                <li>Solicitud de licencia de viaje a países no pertenecientes a la Unión Europea
+                  <a href="http://www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/licencias_viaje/licencia_fuera_UE_rellenable.pdf">Pdf rellenable</a>
+                  <a href="www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/licencias_viaje/licencia_fuera_UE.doc">.doc</a>
+                </li>
+              </ul>
+              <ul><h5>Licencias de viaje para estancias superiores a quince días</h5>
+                <li>Es necesario solicitar una Licencia por Docencia e Investigación
+                  <a href="www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/Modelo_11__5.doc">.doc</a>
+                </li>
+              </ul>
+            </ul>
+
+            <ul><h4>Evaluación Docente (quinquenio)</h4>
+              <ul><h5>Profesorado de los Cuerpos Docentes Universitarios</h5>
+                <li>Profesores que han sido sometidos a alguna evaluación y cumplen un nuevo período de cinco años
+                  <a href="http://www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/evaluacion_docente/MODELO.1.pdf">Modelo 1</a>
+                </li>
+                <li>Profesores que han de ser evaluados por primera vez
+                  <a href="http://www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/evaluacion_docente/MODELO_2.pdf">Modelo 2</a>
+                </li>
+              </ul>
+              <ul><h5>Personal Docente e Investigador Contratado por tiempo indefinido</h5>
+                <li>Profesores que solicitan ser evaluados por primera vez
+                  <a href="http://www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/evaluacion_docente/MODELO.3.pdf">Modelo 3</a>
+                </li>
+                <li>Profesores que han sido sometidos a alguna evaluación y cumplen un nuevo período de cinco años
+                  <a href="http://www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/evaluacion_docente/MODELO.4.pdf">Modelo 4</a>
+                </li>
+              </ul>
+            </ul>
+
+            <ul><h4>Solicitud de Compatibilidad</h4>
+              <ul><h5>Es necesario presentar siempre cuatro documentos:</h5>
+                <li>1. Solicitud de compatibilidad con una segunda actividad, ya sea en el sector privado o en el público (son impresos diferentes).</li>
+                <li>2. Certificado de horario en la Escuela.</li>
+                <li>3. Certificado del horario a realizar en la segunda empresa.</li>
+                <li>4. Una vida laboral actualizada.</li>
+
+              </ul>
+              <ul><h5>Impresos</h5>
+                <li>Solicitud de autorización de compatibilidad para el desempeño de un segundo puesto en el sector privado
+                  <a href="http://www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/compatibilidad/Solicitud_Compatibilidad-8.pdf">Pdf rellenable</a>
+                </li>
+                <li>Solicitud de autorización de compatibilidad para el desempeño de un segundo puesto en el sector público
+                  <a href="http://www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/compatibilidad/modelo_solicitud_map.pdf"> Impreso de solicitud del MAP</a>
+                </li>
+                <li>Certificado de horario e informe sobre la solicitud de compatibilidad
+                  <a href="http://www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/compatibilidad/horario_docentes.pdf">Pdf rellenable</a>
+                  <a href="www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/compatibilidad/horario_docentes.doc">.doc</a>
+                </li>
+              </ul>
+            </ul>
+
+
+            <ul><h4>Cambio de dedicación</h4>
+              <ul><h5>Dedicacion a tiempo completo</h5>
+                <li>Solicitud de dedicación a tiempo completo
+                  <a href="http://www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/cambio_dedicacion/sld_completa.pdf">Pdf Rellenable</a>
+                  <a href="www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/cambio_dedicacion/sld_completa.doc">.DOC</a>
+                </li>
+                <li>Declaracion jurada
+                  <a href="http://www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/cambio_dedicacion/dec__jurada_completa.pdf">Pdf Rellenable</a>
+                  <a href="www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/cambio_dedicacion/dec__jurada_completa.doc">.DOC</a>
+                </li>
+                <li>Plan General de Organización Docente
+                  <a href="http://www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/cambio_dedicacion/plan_gral_org_docente.pdf">Pdf Rellenable</a>
+                  <a href="www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/cambio_dedicacion/plan_gral_org_docente.doc">.DOC</a>
+                </li>
+              </ul>
+              <ul><h5>Dedicacion a tiempo parcial</h5>
+                <li>Solicitud de dedicación a tiempo parcial
+                  <a href="http://www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/cambio_dedicacion/sld_parcial.pdf">Pdf Rellenable</a>
+                  <a href="www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/cambio_dedicacion/sld_parcial.doc">.DOC</a>
+                </li>
+                <li>Declaracion jurada
+                  <a href="http://www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/cambio_dedicacion/dec__jurada_parcial.pdf">Pdf Rellenable</a>
+                  <a href="www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/cambio_dedicacion/dec__jurada_parcial.doc">.DOC</a>
+                </li>
+                <li>Plan General de Organización Docente
+                  <a href="http://www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/cambio_dedicacion/plan_gral_org_docente.pdf">Pdf Rellenable</a>
+                  <a href="www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/cambio_dedicacion/plan_gral_org_docente.doc">.DOC</a>
+                </li>
+              </ul>
+            </ul>
+
+            <ul><h4>Período Sabático </h4>   
+                <li>Instancia para solicitud de período Sabático
+                  <a href="http://www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/periodo_sabatico/Instancia_para_solicitud_de_periodo_Sabatico.pdf">(PDF)</a></li>
+                <li>Modelo de currículum para período Sabático
+                  <a href="www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/periodo_sabatico/Modelo_Curriculum.doc">(.DOC)</a></li>
+                <li>Informe del Departamento para la concesión de períodos Sabáticos
+                  <a href="www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/periodo_sabatico/Informe_del_Departamento_para_la_concesion_de_periodos_sabaticos.docx">(.DOC)</a></li>
+                <li>Informe del Centro para la concesión de períodos Sabáticos
+                  <a href="www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/periodo_sabatico/Informe_del_Centro_para_la_concesion_de_periodos_sabaticos.doc">(.DOC)</a></li>
+            </ul> 
+
+            <ul><h4>Comision de Seleccion de PDI Laboral </h4>
+                <li>Acta de la Comisión de Selección de profesorado interino y contratado
+                  <a href="www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/comision_seleccion/acta.doc">(.DOC)</a></li>
+                <li>Certificado para el cobro por asistencia de los miembros de la Comisión (sólo miembros de la Comisión no pertenecientes a la UPM 
+                  <a href="http://www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/comision_seleccion/anexo_I.pdf">(PDF)</a></li>
+                <li>Certificado para el cobro por asistencia de los miembros de la Comisión (sólo miembros de la Comisión no pertenecientes a la UPM
+                  <a href="www.etsit.upm.es/fileadmin/documentos/servicios/personal/impresos_PDI/comision_seleccion/anexo_I.doc">(.DOC)</a></li>
+            </ul> 
+          
+        </div>
+
+</body>
+<script>
+$(document).ready(function(){
+    dibujarmenulateral("gestionAplicaciones","/estudiantes/ofic-inter-contact/logout");
+});
+</script>
+</html>
+

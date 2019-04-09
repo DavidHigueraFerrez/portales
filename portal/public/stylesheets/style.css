@@ -11,6 +11,18 @@ a {
   height: auto;
   text-align: center;
 }
+.reserva-espacios-enlace{
+  text-align:left;
+}
+.imagen-reservas img {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-top:2.5em;
+}
+.imagen-reservas{
+  margin-top:2.5em;
+}
 
 #portal-texto{
   font-size: 1.75em;

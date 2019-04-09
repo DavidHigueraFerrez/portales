@@ -19,6 +19,7 @@ const contextPathESTD =normalize(process.env.CONTEXTOESTD || '/estudiantes/');
 const contextPathCAUS =normalize(process.env.CONTEXTOCAUS || '/caus/');
 const contextPathPARK =normalize(process.env.CONTEXTOPARK || '/parking/');
 const contextPathDOC =normalize(process.env.CONTEXTODOC || '/documentacion/');
+const contextPathRES =normalize(process.env.CONTEXTORES || '/reserva-espacios/');
 
 
 exports.contextPathPDI = contextPathPDI;
@@ -28,6 +29,7 @@ exports.contextPathPARK = contextPathPARK;
 exports.contextPruebas = contextPruebas;
 exports.contextPathCAUS = contextPathCAUS;
 exports.contextPathDOC = contextPathDOC;
+exports.contextPathRES = contextPathRES;
 
 
 // view engine setup
@@ -45,6 +47,7 @@ app.use(contextPathESTD, express.static(path.join(__dirname, 'public')));
 app.use(contextPathCAUS, express.static(path.join(__dirname, 'public')));
 app.use(contextPathPARK, express.static(path.join(__dirname, 'public')));
 app.use(contextPathDOC, express.static(path.join(__dirname, 'public')));
+app.use(contextPathRES, express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 
@@ -183,6 +186,17 @@ app.get(contextPathESTD+contextPathPARK +"/images/logo-upm.gif", function(req, r
   res.sendFile('/public/images/logo-upm.gif', {root: __dirname});
 });
 
+//fotos logo UPM para Documentacion
+app.get(contextPathPAS+contextPathDOC +"/images/logo-upm.gif", function(req, res, next) {
+  res.sendFile('/public/images/logo-upm.gif', {root: __dirname});
+});
+app.get(contextPathPDI+contextPathDOC +"/images/logo-upm.gif", function(req, res, next) {
+  res.sendFile('/public/images/logo-upm.gif', {root: __dirname});
+});
+app.get(contextPathESTD+contextPathDOC +"/images/logo-upm.gif", function(req, res, next) {
+  res.sendFile('/public/images/logo-upm.gif', {root: __dirname});
+});
+
 //fotos para foto edificio A 
 app.get(contextPathPAS +"/images/portada-escuela.jpg", function(req, res, next) {
   res.sendFile('/public/images/portada-escuela.jpg', {root: __dirname});
@@ -225,6 +239,27 @@ app.get(contextPathPDI +contextPathPARK +"/images/logo-parking.png", function(re
 });
 app.get(contextPathPDI +contextPathPARK +"/pdf/instrucciones-parking.pdf", function(req, res, next) {
   res.sendFile('/public/pdf/instrucciones-parking.pdf', {root: __dirname});
+});
+
+//contexto para imagenes y pdf de Reserva espacios
+
+app.get(contextPathPAS +contextPathRES +"/images/reserva-aula.png", function(req, res, next) {
+  res.sendFile('/public/images/reserva-aula.png', {root: __dirname});
+});
+app.get(contextPathPAS +contextPathRES +"/images/reserva-filtro.png", function(req, res, next) {
+  res.sendFile('/public/images/reserva-filtro.png', {root: __dirname});
+});
+app.get(contextPathPAS +contextPathRES +"/images/reserva-formulario.png", function(req, res, next) {
+  res.sendFile('/public/images/reserva-formulario.png', {root: __dirname});
+});
+app.get(contextPathPDI +contextPathRES +"/images/reserva-aula.png", function(req, res, next) {
+  res.sendFile('/public/images/reserva-aula.png', {root: __dirname});
+});
+app.get(contextPathPDI +contextPathRES +"/images/reserva-filtro.png", function(req, res, next) {
+  res.sendFile('/public/images/reserva-filtro.png', {root: __dirname});
+});
+app.get(contextPathPDI +contextPathRES +"/images/reserva-formulario.png", function(req, res, next) {
+  res.sendFile('/public/images/reserva-formulario.png', {root: __dirname});
 });
 
 // catch 404 and forward to error handler

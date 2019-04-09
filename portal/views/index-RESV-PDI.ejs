@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8"> 
+  <!-- Despliegue -->
+  <link rel='stylesheet' type="text/css" href='./stylesheets/style.css' />
+  <link rel='stylesheet' type="text/css" href='./stylesheets/style.css' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+  <title>Portal del PDI</title>
+</head>
+<body>	
+        <% if(contextPruebas === true){ %>
+        <script src="https://pruebas.etsit.upm.es/pdi/static-button"></script>
+        <div id="banner" class="row">
+          <div class="col-sm-3" >
+              <br>
+              <a href="http://www.upm.es/"><img src="./images/logo-upm.gif" width="70"></a>
+              <a href="http://www.etsit.upm.es/"><img src="./images/logo-etsit.gif" width="150"></a>
+          </div>
+          <div class="col-sm-8" >
+              <h3 id="title-portal-1">Reserva de Espacios PDI - En Desarrollo</h3>
+              <h4 id="title-portal-2"> <a id ="etsit" href="http://www.etsit.upm.es/">Escuela Técnica Superior de Ingenieros de Telecomunicaciones</a> de la <a id="upm" href="http://www.upm.es/"> Universidad Politécnica de Madrid</a> </h4>
+          </div>
+          <div id ="gestionAplicaciones"class="col-sm-1">
+
+          </div>
+        </div>
+        <% } else {%>
+        <script src="https://portal.etsit.upm.es/pdi/static-button"></script>
+        <div id="main-header" class="row">
+          <div class="col-sm-3" >
+              <br>
+              <a href="http://www.upm.es/"><img src="./images/logo-upm.gif" width="70"></a>
+              <a href="http://www.etsit.upm.es/"><img src="./images/logo-etsit.gif" width="150"></a>
+          </div>
+          <div class="col-sm-8" >
+              <h3 id="title-portal-1">Reserva de Espacios PDI</h3>
+              <h4 id="title-portal-2"> <a id ="etsit" href="http://www.etsit.upm.es/">Escuela Técnica Superior de Ingenieros de Telecomunicaciones</a> de la <a id="upm" href="http://www.upm.es/"> Universidad Politécnica de Madrid</a> </h4>
+          </div>
+          <div id ="gestionAplicaciones"class="col-sm-1">
+
+          </div>
+        </div>
+        <% } %>
+        <div class="portal-texto">
+        <h2>Bienvenido</h2>
+          <h4>Notas explicativas sobre la aplicacion de reserva de espacios</h4>
+              <div class="reserva-espacios-enlace">
+                  <p>La aplicacion es accesible mediante el enlace inferior, pero se recomienda leer antes las notas explicativas</p>
+                  <p><h4><strong>NO ES NECESARIO imprimir o presentar papel.</strong><h4></p>
+                  <h4><a href="https://pruebas.etsit.upm.es/reservaespacios/Web/">Aplicacion Reserva de Espacios</a></h4>
+              </div>
+                  
+              <div>
+                  <span>
+                      <p><h4>Condiciones Generales de Servicio</h4></p>
+                      <input id="button-show-instruciones" type="button" value="Abrir" class="add-button" />
+                  </span> 
+                 
+                  
+                  <div id="div-instrucciones" style="display:none;">
+                      <div class="col-sm-12">
+                          
+                          <ul>
+                              <li>No existen usuarios preferentes de ningún local de la Escuela.</li>
+                              <li>Se deberá evitar mover el mobiliario. En caso de que sea imprescindible hacerlo, se ruega dejar las Salas tal y como se las encontró.</li>
+                              <li>Por razones de seguridad, NO se deberá bloquear el paso de la salida de emergencia de ninguna sala, ni durante la utilización de la misma, ni después.</li>
+                              <li>La reserva de un local deberá hacerse con una antelación máxima de un mes y mínima de dos horas (en horario de servicio de 9:00&nbsp;a 14:00 h.),
+                              en caso de solicitar la organización de un evento, la antelación mínima deberá ser de dos días laborables, de no ser así, no se garantiza el correcto suministro del servicio.</li>
+                              <li>La ocupación de las salas o espacios de la Escuela será como máximo hasta las 21:30, de Lunes a Viernes, y los Sábados hasta las 13:30.
+                              Excepcionalmente se podrá solicitar el uso de las instalaciones por encima de este horario con justificación y con previo aviso para que se pueda dotar a la Escuela de las medidas de seguridad necesarias.</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+
+              <div>
+                  <span>
+                      <div class="row">
+                          <div class="col-sm-12"><p><h4>Instrucciones Reserva Aula HP</h4><input id="button-show-instruciones-HP" type="button" value="Abrir" class="add-button"/></p></div>
+                      </div>    
+                  </span>             
+                  <div id="div-instrucciones-HP" style="display:none;">
+                      
+                      <div class="col-sm-12">
+                          <strong><p> Procedimiento reserva Aula HP</strong><p> 
+                          
+                          <ul>
+                              <li>Protcolo para la reserva Aula HP <a href="https://www.etsit.upm.es/fileadmin/documentos/reserva_espacios/Protocolo_a_seguir_para_reserva_del_aula_A-037.pdf"> Pdf</a> </li>
+                              <li>Anexo Solicitud rellenable(leer antes de cumplimentar la solicitud)<a href="https://www.etsit.upm.es/fileadmin/documentos/reserva_espacios/Anexo_Solicitud_Rellenable__leer_antes_.pdf"> Pdf</a></li>
+                              <li>Solicitud a cumplimentar y adjuntar en la reserva<a href="https://www.etsit.upm.es/fileadmin/documentos/reserva_espacios/Solicitud_RELLENABLE_para_cursos_impartidos_en_Aula_HP.pdf"> Pdf</a> </li>                                    
+                              <li>Ubicacion de puestos en el Aula HP<a href="https://www.etsit.upm.es/fileadmin/documentos/reserva_espacios/Ubicacion_de_puestos_en_el_AULA_HP.pdf"> Pdf</a></li>    
+                          </ul>
+                  <span>
+                      <strong><p> Notas de Servicios</strong><p> 
+                      <p class="bodytext">Por razones técnicas, en caso de&nbsp;necesitar alguno de los servicios que ofrece el Gabinete de Informatica y Comunicaciones, por ejemplo&nbsp;
+                      Red WIFI, Conexión a internet, etc. deberás solicitarlo al menos con 24 h hábiles de antelación utilizando el&nbsp;
+                      <a href="https://cau.etsit.upm.es/" target="_blank">Centro de Atención a Usuarios</a>&nbsp;destinado a tal fin y al cual podrás acceder con tu usuario/password de la ETSIT.
+                      </p>
+                  </span>
+                  </div>
+                  </div>
+              </div>
+
+              <div>
+                  <span>
+                      <p><h4>Instrucciones de reserva Aplicacion</h4></p>
+                      <input id="button-show-instruciones-reserva" type="button" value="Abrir" class="add-button"/>
+                      
+                  </span> 
+                      <div id="div-instrucciones-reserva" style="display:none;">
+                         
+                          <div class="imagen-reservas row">
+                              <div class="col-sm-12">
+                                  <p>Para solicitar una reserva, se seleccionará el recurso deseado y se abarcará el horario requerido.</p> 
+                                  <p><h5>1º</h5>Ejemplo de reserva del aula A102-L3 de 12:00 a 14:00:</p>
+                      
+                              </div>
+                          </div>
+                          <div class="imagen-reservas row">
+                          <div class="col-sm-12"><img src="./images/reserva-aula.png"></div>
+                      </div>
+                  <div class="imagen-reservas row">
+                      <div class="col-sm-12">
+                          <p><h5>2º</h5>En los filtros de la izquierda, se podrá especificar criterios como el edificio, el aula o recurso o la capacidad del aula. 
+                          Por ejemplo, para consultar la disponibilidad de un aula en el edificio A con capacidad de 60 alumnos,
+                          se especificará según la siguiente figura:</p>
+                      </div>
+                  </div>
+                  <div class="imagen-reservas row">
+                      <div class="col-sm-12">
+                          <img src="./images/reserva-filtro.png">
+                      </div>
+                  </div>
+                  <div class="imagen-reservas row">
+                      <div class="col-sm-12">
+                          <p><h5>3º</h5>Al establecer una reserva, se pasará a una pantalla donde se ampliarán los datos de la reserva:
+                          <ul>
+                              <li>Título (obligatorio)</li>
+                              <li>Descripción</li>
+                              <li>Uso de la reserva</li>
+                              <li>¿Adjuntas documento? Indica Si/No con el selector</li>
+                              <ul> 
+                                  <li>Adjunta los documentos que quieras al final del formulario. <strong>Adjuntar aqui los documentos del AULA HP</strong></li>
+                              </ul>
+                                  <li>¿Necesitas material extra? Indica Si/No con el selector</li>
+                              <ul> 
+                                  <li>Seleciona en el apartado de accesorios cual de los accesorios disponibles para tu reserva solicitas</li>
+                              </ul>
+                          </ul>
+              
+                          <p> Al pulsar <strong>“Crear”</strong>, se registra en la aplicación la solicitud y el interesado o interesados recibirán un mensaje notificando 
+                          que la reserva necesita confirmación.</p>
+
+                          <p>Cuando el administrador de espacios conceda la reserva, se recibirá una notificación constatando la firmeza de la reserva. 
+                          Para la hora y sitio solicitados, el interesado podrá solicitar la llave y recursos especificados
+                          en la conserjería del edificio correspondiente.</p>
+                      </div>                        
+                  <div class="col-sm-12">
+                      <img src="./images/reserva-formulario.png">  
+                  </div>
+                  <div class="col-sm-1"></div>
+                  </div> 
+              </div>
+      </div>
+        
+</body>
+<script>
+$(document).ready(function(){
+    dibujarmenulateral("gestionAplicaciones","/estudiantes/ofic-inter-contact/logout");
+});
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#button-show-instruciones").click(function(){
+   		var ArrowId = $(this).attr('id');
+  		if (ArrowId == 'up') {
+     		$("button-show-instruciones").html('&#8593');
+    	 	$(this).attr('id','down');
+     } else {
+     		$("button-show-instruciones").html('&#8595');
+     		$(this).attr('id','up');
+     }
+        $("#div-instrucciones").slideToggle();
+    });
+    $("#button-show-instruciones-HP").click(function(){
+   		var ArrowId = $(this).attr('id');
+  		if (ArrowId == 'up') {
+     		$("#button-show-instruciones-HP").html('&#8595');
+    	 	$(this).attr('id','down');
+     } else {
+     		$("#button-show-instruciones-HP").html('&#8593');
+     		$(this).attr('id','up');
+     }
+        $("#div-instrucciones-HP").slideToggle();
+    });
+    $("#button-show-instruciones-reserva").click(function(){
+   		var ArrowId = $(this).attr('id');
+  		if (ArrowId == 'up') {
+     		$("#button-show-instruciones-reserva").html('&#8595');
+    	 	$(this).attr('id','down');
+     } else {
+     		$("#button-show-instruciones-reserva").html('&#8593');
+     		$(this).attr('id','up');
+     }
+        $("#div-instrucciones-reserva").slideToggle();
+    });
+});
+$(document).ready(function(){
+    $("button").click(function(){
+   		var ArrowId = $(this).attr('id');
+  		if (ArrowId == 'up') {
+     		$("button").html('&#8595');
+    	 	$(this).attr('id','down');
+     } else {
+     		$("button").html('&#8593');
+     		$(this).attr('id','up');
+     }
+    });    
+});
+</script>
+<script>
+
+$(document).ready(function() {
+    $('.add-button').click(function() {
+        //alert('clicked');
+        if(this.value=='Abrir'){
+        	this.value = 'Ocultar';
+        }
+        else if(this.value=='Ocultar'){
+        	this.value = 'Abrir';
+        }
+    });
+});
+</script>
+</html>
+
+

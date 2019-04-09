@@ -11,6 +11,7 @@ const contextPathESTD =normalize(process.env.CONTEXTOESTD || '/estudiantes/');
 const contextPathCAUS =normalize(process.env.CONTEXTOCAUS || '/caus/');
 const contextPathPARK =normalize(process.env.CONTEXTOPARK || '/parking/');
 const contextPathDOC =normalize(process.env.CONTEXTODOC || '/documentacion/');
+const contextPathRES =normalize(process.env.CONTEXTORES || '/reserva-espacios/');
 
 
 router.get('/', function(req, res) {
@@ -98,6 +99,21 @@ router.get(contextPathPAS+contextPathDOC, function(req, res, next) {
 
 router.get(contextPathESTD+contextPathDOC, function(req, res, next) {
   res.render('index-DOC-ESTD', {
+     title: 'Express',
+     contextPruebas : contextPruebas 
+    });
+});
+
+//context path reserva-espacios
+router.get(contextPathPDI+contextPathRES, function(req, res, next) {
+  res.render('index-RESV-PDI', {
+     title: 'Express',
+     contextPruebas : contextPruebas 
+    });
+});
+
+router.get(contextPathPAS+contextPathRES, function(req, res, next) {
+  res.render('index-RESV-PAS', {
      title: 'Express',
      contextPruebas : contextPruebas 
     });

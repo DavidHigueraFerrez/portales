@@ -51,17 +51,15 @@
         <% } %>
         <div class="portal-texto">
         <h2>Bienvenido</h2>
-          <h4>Notas explicativas sobre la aplicacion de reserva de espacios</h4>
               <div class="reserva-espacios-enlace">
-                  <p>La aplicacion es accesible mediante el enlace inferior, pero se recomienda leer antes las notas explicativas</p>
                   <p><h4><strong>NO ES NECESARIO imprimir o presentar papel.</strong><h4></p>
-                  <h4><a href="https://pruebas.etsit.upm.es/reservaespacios/Web/">Aplicacion Reserva de Espacios</a></h4>
+                  <h4><a href="https://pruebas.etsit.upm.es/reservaespacios/Web/">Solicitud de Reserva de Espacios</a></h4>
               </div>
                   
               <div>
                   <span>
                       <p><h4>Condiciones Generales de Servicio</h4></p>
-                      <input id="button-show-instruciones" type="button" value="Abrir" class="add-button" />
+                      <input id="button-show-instruciones" type="button" value="+" class="add-button" />
                   </span> 
                  
                   
@@ -84,7 +82,7 @@
               <div>
                   <span>
                       <div class="row">
-                          <div class="col-sm-12"><p><h4>Instrucciones Reserva Aula HP</h4><input id="button-show-instruciones-HP" type="button" value="Abrir" class="add-button"/></p></div>
+                          <div class="col-sm-12"><p><h4>Instrucciones Reserva Aula HP</h4><input id="button-show-instruciones-HP" type="button" value="+" class="add-button"/></p></div>
                       </div>    
                   </span>             
                   <div id="div-instrucciones-HP" style="display:none;">
@@ -111,8 +109,8 @@
 
               <div>
                   <span>
-                      <p><h4>Instrucciones de reserva Aplicacion</h4></p>
-                      <input id="button-show-instruciones-reserva" type="button" value="Abrir" class="add-button"/>
+                      <p><h4>Ayuda de la Aplicacion de Reserva de Espacios</h4></p>
+                      <input id="button-show-instruciones-reserva" type="button" value="+" class="add-button"/>
                       
                   </span> 
                       <div id="div-instrucciones-reserva" style="display:none;">
@@ -233,11 +231,11 @@ $(document).ready(function(){
 $(document).ready(function() {
     $('.add-button').click(function() {
         //alert('clicked');
-        if(this.value=='Abrir'){
-        	this.value = 'Ocultar';
+        if(this.value=='+'){
+        	this.value = '-';
         }
-        else if(this.value=='Ocultar'){
-        	this.value = 'Abrir';
+        else if(this.value=='-'){
+        	this.value = '+';
         }
     });
 });

@@ -262,6 +262,11 @@ app.get(contextPathPDI +contextPathRES +"/images/reserva-formulario.png", functi
   res.sendFile('/public/images/reserva-formulario.png', {root: __dirname});
 });
 
+//logo escuela para plantilla mail
+app.get(contextPathPDI +contextPathRES +"/images/logo-escuela-mail.png", function(req, res, next) {
+  res.sendFile('/public/images/logo-escuela-mail.png', {root: __dirname});
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

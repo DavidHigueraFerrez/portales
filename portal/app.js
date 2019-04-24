@@ -122,6 +122,16 @@ app.get(contextPathESTD+contextPathCAUS +"/stylesheets/style.css", function(req,
   res.sendFile('/public/stylesheets/style.css', {root: __dirname});
 });
 
+app.get(contextPathPAS+contextPathRES +"/stylesheets/style.css", function(req, res, next) {
+  res.sendFile('/public/stylesheets/style.css', {root: __dirname});
+});
+app.get(contextPathPDI+contextPathRES +"/stylesheets/style.css", function(req, res, next) {
+  res.sendFile('/public/stylesheets/style.css', {root: __dirname});
+});
+app.get(contextPathESTD+contextPathRES +"/stylesheets/style.css", function(req, res, next) {
+  res.sendFile('/public/stylesheets/style.css', {root: __dirname});
+});
+
 //fotos para logo etsit
 app.get(contextPathPAS+ "/images/logo-etsit.gif", function(req, res, next) {
  res.sendFile('/public/iamges/logo-etsit.gif', {root: __dirname});
@@ -197,6 +207,18 @@ app.get(contextPathESTD+contextPathDOC +"/images/logo-upm.gif", function(req, re
   res.sendFile('/public/images/logo-upm.gif', {root: __dirname});
 });
 
+
+//fotos logo UPM para Reserva de Espacios
+app.get(contextPathPAS+contextPathRES +"/images/logo-upm.gif", function(req, res, next) {
+  res.sendFile('/public/images/logo-upm.gif', {root: __dirname});
+});
+app.get(contextPathPDI+contextPathRES +"/images/logo-upm.gif", function(req, res, next) {
+  res.sendFile('/public/images/logo-upm.gif', {root: __dirname});
+});
+app.get(contextPathESTD+contextPathRES +"/images/logo-upm.gif", function(req, res, next) {
+  res.sendFile('/public/images/logo-upm.gif', {root: __dirname});
+});
+
 //fotos para foto edificio A 
 app.get(contextPathPAS +"/images/portada-escuela.jpg", function(req, res, next) {
   res.sendFile('/public/images/portada-escuela.jpg', {root: __dirname});
@@ -210,7 +232,6 @@ app.get(contextPathESTD +"/images/portada-escuela.jpg", function(req, res, next)
 app.get(contextPathESTD+contextPathCAUS +"/images/logo-caus.jpg", function(req, res, next) {
   res.sendFile('/public/images/logo-caus.jpg', {root: __dirname});
 });
-
 
 app.get(contextPathPAS+contextPathCAUS +"/images/logo-caus.jpg", function(req, res, next) {
   res.sendFile('/public/images/logo-caus.jpg', {root: __dirname});
@@ -266,6 +287,8 @@ app.get(contextPathPDI +contextPathRES +"/images/reserva-formulario.png", functi
 app.get(contextPathPDI +contextPathRES +"/images/logo-escuela-mail.png", function(req, res, next) {
   res.sendFile('/public/images/logo-escuela-mail.png', {root: __dirname});
 });
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

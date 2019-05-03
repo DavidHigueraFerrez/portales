@@ -61,29 +61,32 @@ let a =
 '<div>'+
 '  <a id="full-name-menu"></a>'+ 
 '  <a id="mail-name-menu"></a>'+ 
-'  <a href="#" id="closeButton6966dbce83d6bd9a2c367f1d2b0bbf25">Cerrar Sesion</a>'+ 
+'  <a href="#" id="closeButton6966dbce83d6bd9a2c367f1d2b0bbf25">Cerrar Sesión</a>'+ 
 '</div>'+
 '<div class="banner-pruebas12345" >'+
 '   <a href="https://pruebas.etsit.upm.es/pas"><h4 >Portal PAS-Desarrollo </h4></a>'+
 '</div>'+
 ' <hr>'+
 '    <div>'+
-'        <a><h4 style="color:#FFFF;">Aplicaciones Docentes</h4></a>'+
+'        <a><h4 style="color:#FFFF;">Aplicaciones Portal</h4></a>'+
 '    </div>'+
 '  <a href="javascript:void(0)" class="closebtn1234" onclick="closeNav06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05()">×</a>'+
-'    <a href="https://appsrv.etsit.upm.es/ofic-inter/home.htm">Aplicación Internacional</a>'+
-'    <a href="https://pruebas.etsit.upm.es/pas/ofic-inter-contact/admin">Aplicación InterContacta</a>'+
-'    <a href="https://appsrv.etsit.upm.es/parking">Aplicación Parking</a>'+
-'    <a href="https://appsrv.etsit.upm.es/practicas/home.htm">Aplicación Prácticas</a>'+
-'    <a href="https://pruebas.etsit.upm.es/progdoc/">Aplicación Programación Docente</a>'+
-'    <a href="https://appsrv.etsit.upm.es/docencia/tft">Aplicación TFT</a>'+
+'    <a href="https://appsrv.etsit.upm.es/ofic-inter/home.htm">Internacional</a>'+
+'    <a href="https://pruebas.etsit.upm.es/pas/ofic-inter-contact/admin">InterContacta</a>'+
+'    <a href="https://pruebas.etsit.upm.es/pas/parking">Parking</a>'+
+'    <a href="https://appsrv.etsit.upm.es/practicas/home.htm">Prácticas</a>'+
+'    <a href="https://pruebas.etsit.upm.es/pas/progdoc/">Programación Docente</a>'+
+'    <a href="https://appsrv.etsit.upm.es/docencia/tft">TFT</a>'+
 '    <a href="https://dev.etsit.upm.es/ofic-inter-contact">Directorio de Personal</a>'+
+'    <a href="https://dev.etsit.upm.es/reservaespacios">Reserva Espacios</a>'+
 '    <hr>'+
 '    <div>'+
-'        <a><h4 style="color:#FFFF;">Servicios Generales</h4></a>'+
+'        <a><h4 style="color:#FFFF;">Otras Aplicaciones</h4></a>'+
 '    </div>'+
 '    <div>'+
-'        <a href="http://www.etsit.upm.es/escuela/unidades-administrativas-y-servicios/incidencias-caus.html">Incidencias (CAUs)</a>'+
+'        <a href="http://www.etsit.upm.es/estudiantes/becas-y-ofertas-de-empleo.html">Becas y Empleo</a>'+
+'        <a href="https://pruebas.etsit.upm.es/pas/documentacion">Impresos PAS</a>'+
+'        <a href="https://pruebas.etsit.upm.es/pas/caus/">Incidencias (CAUs)</a>'+
 '        <a href="http://www.etsit.upm.es/footer-columnas4/personal/politecnica-virtual.html">Politécnica Virtual</a>'+
 '        <a href="https://www.etsit.upm.es/escuela/unidades-administrativas-y-servicios/reserva-de-espacios.html">Reserva de Espacios</a>'+
 '        <a href="https://webmail.etsit.upm.es/rc/v2/">Webmail (ETSIT)</a>'+

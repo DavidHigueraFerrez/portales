@@ -67,10 +67,10 @@ let a =
 '        <a><h4 style="color:#FFFF;">Aplicaciones Docentes</h4></a>'+
 '    </div>'+
 '  <a href="javascript:void(0)" class="closebtn1234" onclick="closeNav06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05()">×</a>'+
-'    <a href="https://estudios.etsit.upm.es/grado/grupos/">Aplicación Elección Grupos</a>'+
-'    <a href="https://appsrv.etsit.upm.es/parking">Aplicación Parking</a>'+
-'    <a href="https://appsrv.etsit.upm.es/practicas/home.htm">Aplicación Prácticas</a>'+
-'    <a href="https://appsrv.etsit.upm.es/docencia/tft">Aplicación TFT</a>'+
+'    <a href="https://estudios.etsit.upm.es/grado/grupos/">Elección Grupos</a>'+
+'    <a href="https://appsrv.etsit.upm.es/parking">Parking</a>'+
+'    <a href="https://appsrv.etsit.upm.es/practicas/home.htm">Prácticas</a>'+
+'    <a href="https://appsrv.etsit.upm.es/docencia/tft">TFT</a>'+
 '    <a href="https://appsrv.etsit.upm.es/ofic-inter">Oficina Internacional</a>'+
 '    <a href="https://portal.etsit.upm.es/estudiantes/ofic-inter-contact/">InterContacta</a>'+
 '    <hr>'+
@@ -78,7 +78,8 @@ let a =
 '        <a><h4 style="color:#FFFF;">Servicios Generales</h4></a>'+
 '    </div>'+
 '    <div>'+
-'        <a href="http://www.etsit.upm.es/escuela/unidades-administrativas-y-servicios/incidencias-caus.html">Incidencias (CAUs)</a>'+
+'        <a href="http://www.etsit.upm.es/estudiantes/becas-y-ofertas-de-empleo.html">Becas y Empleo</a>'+
+'        <a href="https://portal.etsit.upm.es/estudiantes/caus/">Incidencias (CAUs)</a>'+
 '        <a href="http://www.etsit.upm.es/footer-columnas4/personal/politecnica-virtual.html">Politécnica Virtual</a>'+
 '        <a href="https://www.etsit.upm.es/estudiantes/proyecto-mentor.html">Proyecto Mentor</a>'+
 '        <a href="https://webmail.etsit.upm.es/rc/v2/">Webmail (ETSIT)</a>'+

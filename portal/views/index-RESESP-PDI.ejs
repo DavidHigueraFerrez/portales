@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8"> 
+  <!-- Despliegue -->
+  <link rel='stylesheet' type="text/css" href='./stylesheets/style.css' />
+  <link rel='stylesheet' type="text/css" href='./stylesheets/style.css' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+  <title>Portal del PDI</title>
+</head>
+<body>	
+        <% if(contextPruebas === true){ %>
+        <script src="https://pruebas.etsit.upm.es/pdi/static-button"></script>
+        <div id="banner" class="row">
+          <div class="col-sm-2" >
+              <br>
+              <a href="http://www.upm.es/"><img src="./images/logo-upm.gif" width="70"></a>
+              <a href="http://www.etsit.upm.es/"><img src="./images/logo-etsit.gif" width="70"></a>
+          </div>
+          <div class="col-sm-9" >
+              <h3 id="title-portal-1">Reserva de Espacios -- PDI - En Desarrollo</h3>
+              <h4 id="title-portal-2"> <a id ="etsit" href="http://www.etsit.upm.es/">Escuela Técnica Superior de Ingenieros de Telecomunicaciones</a> de la <a id="upm" href="http://www.upm.es/"> Universidad Politécnica de Madrid</a> </h4>
+          </div>
+          <div id ="gestionAplicaciones"class="col-sm-1">
+
+          </div>
+        </div>
+        <% } else {%>
+        <script src="https://portal.etsit.upm.es/pdi/static-button"></script>
+        <div id="main-header" class="row">
+          <div class="col-sm-2" >
+              <br>
+              <a href="http://www.upm.es/"><img src="./images/logo-upm.gif" width="70"></a>
+              <a href="http://www.etsit.upm.es/"><img src="./images/logo-etsit.gif" width="70"></a>
+          </div>
+          <div class="col-sm-9" >
+              <h3 id="title-portal-1">Reserva de Espacios -- PDI</h3>
+              <h4 id="title-portal-2"> <a id ="etsit" href="http://www.etsit.upm.es/">Escuela Técnica Superior de Ingenieros de Telecomunicaciones</a> de la <a id="upm" href="http://www.upm.es/"> Universidad Politécnica de Madrid</a> </h4>
+          </div>
+          <div id ="gestionAplicaciones"class="col-sm-1">
+
+          </div>
+        </div>
+        <% } %>
+        <div class="portal-texto">
+          <h2>Bienvenido a Reserva de espacios </h2>
+            <p>La Escuela ofrece un servicio de reserva de espacios disponibles y asistencia en la organización de actos y
+            otros eventos</p>
+
+          <h3>Instrucciones</h3>
+            <ul>
+              <li>En el formulario de reserva estan los campos correspondientes para cubrir totalmente tus necesidades, leelo completamente.</li>
+                <ul>
+                  <li>camaras, ordenadores, soporte técnico de personal de medios audiovisuales,personal de informática,</li>
+                </ul>    
+              <li>En caso de solicitar reserva del Aula HP (A-037), en el campo de adjuntar documentos del formulario vía el Formulario de Reserva de Aulas,
+               y atendiendo a las especiales condiciones de este aula, los usuarios seguirán obligatoriamente el siguiente PROTOCOLO:</li>
+            </ul>
+
+          <h3><a href="https://appsrv.etsit.upm.es/parking/index.php">Acceso a la aplicacion </a></h3>
+
+
+          <h2>Normas generales y condiciones del servicio</h2>
+            <ul>
+              <li>No existen usuarios preferentes de ningún local de la Escuela.</li>
+              <li>Se deberá evitar mover el mobiliario. En caso de que sea imprescindible hacerlo, se ruega dejar las Salas tal y como se las encontró.</li>
+              <li>Por razones de seguridad, NO se deberá bloquear el paso de la salida de emergencia de ninguna sala, ni durante la utilización de la misma, ni después.</li>
+              <li>La reserva de un local deberá hacerse con una antelación máxima de un mes y mínima de dos horas (en horario de servicio de 9:00 a 14:00 h.), 
+              en caso de solicitar la organización de un evento,la antelación mínima deberá ser de dos días laborables, de no ser así, no se garantiza el correcto suministro del servicio.</li>
+              <li>La ocupación de las salas o espacios de la Escuela será como máximo hasta las 21:30, de Lunes a Viernes, y los Sábados hasta las 13:30.
+               Excepcionalmente se podrá solicitar el uso de las instalaciones por encima de este horario con justificación y con previo aviso para que se pueda dotar a la Escuela de las medidas de seguridad necesarias.</li>
+            </ul>  
+        </div>
+
+</body>
+<script>
+$(document).ready(function(){
+    dibujarmenulateral("gestionAplicaciones","/estudiantes/ofic-inter-contact/logout");
+});
+</script>
+</html>
+

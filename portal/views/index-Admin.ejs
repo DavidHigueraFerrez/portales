@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8"> 
+  <!-- Despliegue -->
+  <link rel='stylesheet' type="text/css" href='./stylesheets/style.css' />
+  <link rel='stylesheet' type="text/css" href='./stylesheets/style.css' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+  <title>Portal de Administracion</title>
+</head>
+<body>
+<div id="main-header" class="row">
+<div class="col-sm-2" >
+    <br>
+    <a href="http://www.upm.es/"><img src="./images/logo-upm.gif" width="70"></a>
+    <a href="http://www.etsit.upm.es/"><img src="./images/logo-etsit.gif" width="70"></a>
+</div>
+<div class="col-sm-9" >
+    <h3 id="title-portal-1">Portal de Administracion</h3>
+    <h4 id="title-portal-2"> <a id ="etsit" href="http://www.etsit.upm.es/">Escuela Técnica Superior de Ingenieros de Telecomunicaciones</a> de la <a id="upm" href="http://www.upm.es/"> Universidad Politécnica de Madrid</a> </h4>
+</div>
+<div id ="gestionAplicaciones"class="col-sm-1">
+
+</div>
+</div>
+    <% console.log(menusLaterales)%>
+
+    <p><%= console.log(menusLaterales) %></p>
+    
+<div id="main-header" class="tab row">
+  <button class="tablinks" onclick="openCity(event, 'PDI')">PDI</button>
+  <button class="tablinks" onclick="openCity(event, 'PAS')">PAS</button>
+  <button class="tablinks" onclick="openCity(event, 'Estudiantes')">Estudiantes</button>
+  <button class="tablinks" onclick="openCity(event, 'Admin')">Admin</button>
+
+</div>
+
+<div id="PDI" class="tabcontent row">
+  <h3>PDI</h3>
+  <p>Gestion de aplicaciones disponibles en el menu lateral de PDI</p>
+  <% include tablaPDI.ejs %> 
+</div>
+
+<div id="PAS" class="tabcontent row">
+  <h3>PAS</h3>
+  <p>Gestion de aplicaciones disponibles en el menu lateral de PAS</p>
+  <% include tablaPAS.ejs %> 
+</div>
+
+<div id="Estudiantes" class="tabcontent row">
+  <h3>Estudiantes</h3>
+  <p>Gestion de aplicaciones disponibles en el menu lateral de Estudiantes</p>
+  <% include tablaESTD.ejs %> 
+</div>
+<div id="Admin" class="tabcontent row">
+  <h3>Administracion</h3>
+  <p>Gestion de personal con permisos para realizar camnios en los menu laterales</p>
+  <% include tablaESTD.ejs %> 
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 

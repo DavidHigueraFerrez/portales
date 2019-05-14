@@ -97,7 +97,7 @@ let a =
 '    </div>'+
 '</div>'+
 ''+
-'<span class="open-6659b527b8d152af596e174303b316a7 " style="font-size:30px;cursor:pointer" onclick="openNav06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05()">☰</span>'+
+'<span class="open-6659b527b8d152af596e174303b316a7 " style="font-size:30px;cursor:pointer;z-index: 9000" onclick="openNav06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05()">☰</span>'+
 '</div>';
 
 function openNav06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05() {

@@ -57,7 +57,7 @@ let a =
 '}'+
 '</style>'+
 ''+
-'<div id="06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05" class="sidenav-2-d9f2c5a7e3da2e5fa5423cc19ea5a8b5">'+
+'<div id="06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05" class="sidenav-2-d9f2c5a7e3da2e5fa5423cc19ea5a8b5" style="z-index:10000">'+
 
 '<div>'+
 '  <a id="full-name-menu"></a>'+ 

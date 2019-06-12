@@ -53,7 +53,7 @@ let a =
 '}'+
 '</style>'+
 ''+
-'<div id="06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05" class="sidenav-2-d9f2c5a7e3da2e5fa5423cc19ea5a8b5">'+
+'<div id="06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05" class="sidenav-2-d9f2c5a7e3da2e5fa5423cc19ea5a8b5" style="z-index: 11000">'+
 
 '<div>'+
 '  <a id="full-name-menu"></a>'+ 
@@ -69,9 +69,10 @@ let a =
 '</div>'+
 '  <a href="javascript:void(0)" class="closebtn1234" onclick="closeNav06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05()">×</a>'+
 '    <a class="url-aplicacion" href="https://appsrv.etsit.upm.es/ofic-inter/home.htm">Internacional</a>'+
+'        <a href="https://portal.etsit.upm.es/pdi/documentacion">Impresos PDI</a>'+
 '    <a class="url-aplicacion" href="https://appsrv.etsit.upm.es/parking">Parking</a>'+
 '    <a class="url-aplicacion" href="https://appsrv.etsit.upm.es/practicas/home.htm">Prácticas</a>'+
-'    <a class="url-aplicacion" href="https://portal.etsit.upm.es/progdoc/">Programación Docente</a>'+
+'    <a class="url-aplicacion" href="https://portal.etsit.upm.es/pdi/progdoc/">Programación Docente</a>'+
 '    <a class="url-aplicacion" href="https://appsrv.etsit.upm.es/docencia/tft">TFT</a>'+
 '    <a class="url-aplicacion" href="https://portal.etsit.upm.es/pdi/directorio_personal">Directorio Personal</a>'+
 '    <hr>'+
@@ -80,7 +81,6 @@ let a =
 '</div>'+
 '    <div>'+
 '        <a href="https://www.upm.es/apolo/login.upm">Actas y Calificaciones (APOLO)</a>'+
-'        <a href="https://portal.etsit.upm.es/pdi/documentacion">Impresos PDI</a>'+
 '        <a href="https://portal.etsit.upm.es/pdi/caus/">Incidencias (CAUs)</a>'+
 '        <a href="https://www.upm.es/gauss/">Guías Docentes (GAUSS)</a>'+
 '        <a href="https://goleta.etsit.upm.es/actas/">Listas de clase</a>'+
@@ -92,7 +92,7 @@ let a =
 '    </div>'+
 '</div>'+
 ''+
-'<span class="open-6659b527b8d152af596e174303b316a7 " style="font-size:30px;cursor:pointer;z-index: 9000" onclick="openNav06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05()">☰</span>'+
+'<span class="open-6659b527b8d152af596e174303b316a7 " style="font-size:30px;cursor:pointer;z-index: 10000" onclick="openNav06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05()">☰</span>'+
 '</div>';
 
 function openNav06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05() {

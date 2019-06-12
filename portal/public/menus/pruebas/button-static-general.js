@@ -65,6 +65,7 @@ let a =
 '</div>'+
 '<div class="banner-pruebas12345" >'+
 '   <a href="https://pruebas.etsit.upm.es/pdi"><h4 >Portal PDI-Desarrollo </h4></a>'+
+'   <a href="https://pruebas.etsit.upm.es/pas"><h4 >Portal PAS-Desarrollo </h4></a>'+
 '</div>'+
 '<hr>'+
 '<div>'+
@@ -72,7 +73,9 @@ let a =
 '</div>'+
 '  <a href="javascript:void(0)" class="closebtn1234" onclick="closeNav06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05()">×</a>'+
 '    <a class="url-aplicacion" href="https://appsrv.etsit.upm.es/ofic-inter/home.htm">Internacional</a>'+
+'    <a href="https://pruebas.etsit.upm.es/pas/ofic-inter-contact/admin">InterContacta</a>'+
 '        <a href="https://pruebas.etsit.upm.es/pdi/documentacion">Impresos PDI</a>'+
+'        <a href="https://pruebas.etsit.upm.es/pas/documentacion">Impresos PAS</a>'+
 '    <a class="url-aplicacion" href="https://pruebas.etsit.upm.es/pdi/parking">Parking</a>'+
 '    <a class="url-aplicacion" href="https://appsrv.etsit.upm.es/practicas/home.htm/">Prácticas</a>'+
 '    <a class="url-aplicacion" href="https://pruebas.etsit.upm.es/pdi/progdoc/">Programación Docente</a>'+
@@ -85,6 +88,7 @@ let a =
 '</div>'+
 '    <div>'+
 '        <a href="https://www.upm.es/apolo/login.upm">Actas y Calificaciones (APOLO)</a>'+
+'        <a href="http://www.etsit.upm.es/estudiantes/becas-y-ofertas-de-empleo.html">Becas y Empleo</a>'+
 '        <a href="https://pruebas.etsit.upm.es/pdi/caus/">Incidencias (CAUs)</a>'+
 '        <a href="https://www.upm.es/gauss/">Guías Docentes (GAUSS)</a>'+
 '        <a href="https://goleta.etsit.upm.es/actas/">Listas de clase</a>'+

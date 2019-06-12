@@ -9,23 +9,18 @@ var usersRouter = require('./routes/users');
 
 const normalize = require('normalize-path');
 
-//inicializacion sequelize
-//let models = require('./models/menusLaterales');
-let models = require('./public/models');
-let Sequelize = require('sequelize');
 var app = express();
-
 
 const contextPruebas = process.env.PRUEBAS && true;
 
 const contextPathPDI = normalize(process.env.CONTEXTOPDI || '/pdi/');
 const contextPathPAS = normalize(process.env.CONTEXTOPAS || '/pas/');
 const contextPathESTD =normalize(process.env.CONTEXTOESTD || '/estudiantes/');
-
 const contextPathCAUS =normalize(process.env.CONTEXTOCAUS || '/caus/');
 const contextPathPARK =normalize(process.env.CONTEXTOPARK || '/parking/');
 const contextPathDOC =normalize(process.env.CONTEXTODOC || '/documentacion/');
 const contextPathRES =normalize(process.env.CONTEXTORES || '/reserva-espacios/');
+
 
 exports.contextPathPDI = contextPathPDI;
 exports.contextPathPAS = contextPathPAS;
@@ -49,7 +44,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(contextPathPDI, express.static(path.join(__dirname, 'public')));
 app.use(contextPathPAS, express.static(path.join(__dirname, 'public')));
 app.use(contextPathESTD, express.static(path.join(__dirname, 'public')));
-
 app.use(contextPathCAUS, express.static(path.join(__dirname, 'public')));
 app.use(contextPathPARK, express.static(path.join(__dirname, 'public')));
 app.use(contextPathDOC, express.static(path.join(__dirname, 'public')));
@@ -80,6 +74,11 @@ if(contextPruebas===true){
   app.get(contextPathESTD+"/static-button-intercontac", (req, res) => {
     res.sendFile('./public/menus/pruebas/button-static-intercontacta-ESTD.js', {root: __dirname});
   });
+  //Menu lateral general para reserva de espacios
+   app.get(contextPathPDI+"/static-button-general", (req, res) => {
+    res.sendFile('./public/menus/pruebas/button-static-general.js', {root: __dirname});
+  });
+
 
 //contexto para aplicaciones desplegadas en produccion
 }else{
@@ -128,6 +127,26 @@ app.get(contextPathESTD+contextPathCAUS +"/stylesheets/style.css", function(req,
   res.sendFile('/public/stylesheets/style.css', {root: __dirname});
 });
 
+app.get(contextPathPAS+contextPathPARK +"/stylesheets/style.css", function(req, res, next) {
+  res.sendFile('/public/stylesheets/style.css', {root: __dirname});
+});
+app.get(contextPathPDI+contextPathPARK +"/stylesheets/style.css", function(req, res, next) {
+  res.sendFile('/public/stylesheets/style.css', {root: __dirname});
+});
+app.get(contextPathESTD+contextPathPARK +"/stylesheets/style.css", function(req, res, next) {
+  res.sendFile('/public/stylesheets/style.css', {root: __dirname});
+});
+
+app.get(contextPathPAS+contextPathDOC +"/stylesheets/style.css", function(req, res, next) {
+  res.sendFile('/public/stylesheets/style.css', {root: __dirname});
+});
+app.get(contextPathPDI+contextPathDOC +"/stylesheets/style.css", function(req, res, next) {
+  res.sendFile('/public/stylesheets/style.css', {root: __dirname});
+});
+app.get(contextPathESTD+contextPathDOC +"/stylesheets/style.css", function(req, res, next) {
+  res.sendFile('/public/stylesheets/style.css', {root: __dirname});
+});
+
 app.get(contextPathPAS+contextPathRES +"/stylesheets/style.css", function(req, res, next) {
   res.sendFile('/public/stylesheets/style.css', {root: __dirname});
 });
@@ -168,6 +187,18 @@ app.get(contextPathESTD+contextPathPARK +"/images/logo-etsit.gif", function(req,
   res.sendFile('/public/images/logo-etsit.gif', {root: __dirname});
 });
 
+//fotos ETSIT para reserva espacios
+app.get(contextPathPAS+contextPathRES +"/images/logo-etsit.gif", function(req, res, next) {
+  res.sendFile('/public/images/logo-etsit.gif', {root: __dirname});
+});
+app.get(contextPathPDI+contextPathRES +"/images/logo-etsit.gif", function(req, res, next) {
+  res.sendFile('/public/images/logo-etsit.gif', {root: __dirname});
+});
+app.get(contextPathESTD+contextPathRES +"/images/logo-etsit.gif", function(req, res, next) {
+  res.sendFile('/public/images/logo-etsit.gif', {root: __dirname});
+});
+
+
 //fotos para logo upm
 app.get(contextPathPAS +"/images/logo-upm.gif", function(req, res, next) {
   res.sendFile('/public/images/logo-upm.gif', {root: __dirname});
@@ -202,6 +233,7 @@ app.get(contextPathESTD+contextPathPARK +"/images/logo-upm.gif", function(req, r
   res.sendFile('/public/images/logo-upm.gif', {root: __dirname});
 });
 
+
 //fotos logo UPM para Documentacion
 app.get(contextPathPAS+contextPathDOC +"/images/logo-upm.gif", function(req, res, next) {
   res.sendFile('/public/images/logo-upm.gif', {root: __dirname});
@@ -212,7 +244,6 @@ app.get(contextPathPDI+contextPathDOC +"/images/logo-upm.gif", function(req, res
 app.get(contextPathESTD+contextPathDOC +"/images/logo-upm.gif", function(req, res, next) {
   res.sendFile('/public/images/logo-upm.gif', {root: __dirname});
 });
-
 
 //fotos logo UPM para Reserva de Espacios
 app.get(contextPathPAS+contextPathRES +"/images/logo-upm.gif", function(req, res, next) {
@@ -238,6 +269,7 @@ app.get(contextPathESTD +"/images/portada-escuela.jpg", function(req, res, next)
 app.get(contextPathESTD+contextPathCAUS +"/images/logo-caus.jpg", function(req, res, next) {
   res.sendFile('/public/images/logo-caus.jpg', {root: __dirname});
 });
+
 
 app.get(contextPathPAS+contextPathCAUS +"/images/logo-caus.jpg", function(req, res, next) {
   res.sendFile('/public/images/logo-caus.jpg', {root: __dirname});
@@ -293,7 +325,6 @@ app.get(contextPathPDI +contextPathRES +"/images/reserva-formulario.png", functi
 app.get(contextPathPDI +contextPathRES +"/images/logo-escuela-mail.png", function(req, res, next) {
   res.sendFile('/public/images/logo-escuela-mail.png', {root: __dirname});
 });
-
 
 
 // catch 404 and forward to error handler

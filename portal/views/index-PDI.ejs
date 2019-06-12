@@ -13,12 +13,11 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
-
   <title>Portal del PDI</title>
 </head>
 <body>
-        <% if(contextPruebas === true){ %>
-        <script src="https://pruebas.etsit.upm.es/pdi/static-button"></script>
+          <% if(contextPruebas === true){ %>
+          <script src="https://pruebas.etsit.upm.es/pdi/static-button"></script>
         <div id="banner" class="row">
           <div class="col-sm-3" >
               <br>
@@ -33,7 +32,7 @@
 
           </div>
         </div>
-        <% }else{ %>
+        <% } else { %>
         <script src="https://portal.etsit.upm.es/pdi/static-button"></script>
         <div id="main-header" class="row">
           <div class="col-sm-3" >
@@ -50,16 +49,15 @@
           </div>
         </div>
         <% } %>
-      <div class="portal-texto">
+        <div class="portal-texto">
         <h2>Bienvenido</h2>
-
-        <p>Desde este portal podrás acceder a las diferentes aplicaciones para el PDI</p>
-        
-        <p>El boton de acceso de las aplicaciones es &#9776; , desde ahí podrá acceder a las aplicaciones del PDI</p> 
-      </div>
-      <div class="imagen-portada row">
-        <div class="col-sm-12"><img src="./images/portada-escuela.jpg"></div>
-      </div>
+          <p>Desde este portal podrás acceder a las diferentes aplicaciones para el PDI</p>
+          
+          <p>El boton de acceso de las aplicaciones es &#9776; , desde ahí podrá acceder a las aplicaciones del PDI</p>
+        </div>
+        <div class="imagen-portada row">
+          <div class="col-sm-12"><img src="./images/portada-escuela.jpg"></div>
+        </div>     
 </body>
 <script>
 $(document).ready(function(){
@@ -67,4 +65,7 @@ $(document).ready(function(){
 });
 </script>
 </html>
+
+
+
 

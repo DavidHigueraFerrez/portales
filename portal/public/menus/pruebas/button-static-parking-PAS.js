@@ -57,7 +57,7 @@ let a =
 '}'+
 '</style>'+
 ''+
-'<div id="06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05" class="sidenav-2-d9f2c5a7e3da2e5fa5423cc19ea5a8b5">'+
+'<div id="06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05" class="sidenav-2-d9f2c5a7e3da2e5fa5423cc19ea5a8b5" style="z-index: 11000">'+
 '<div>'+
 '  <a id="full-name-menu"></a>'+ 
 '  <a id="mail-name-menu"></a>'+ 
@@ -73,19 +73,19 @@ let a =
 '  <a href="javascript:void(0)" class="closebtn1234" onclick="closeNav06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05()">×</a>'+
 '    <a href="https://appsrv.etsit.upm.es/ofic-inter/home.htm">Internacional</a>'+
 '    <a href="https://pruebas.etsit.upm.es/pas/ofic-inter-contact/admin">InterContacta</a>'+
+'        <a href="https://pruebas.etsit.upm.es/pas/documentacion">Impresos PAS</a>'+
 '    <a href="https://pruebas.etsit.upm.es/pas/parking">Parking</a>'+
 '    <a href="https://appsrv.etsit.upm.es/practicas/home.htm">Prácticas</a>'+
 '    <a href="https://pruebas.etsit.upm.es/pas/progdoc/">Programación Docente</a>'+
 '    <a href="https://appsrv.etsit.upm.es/docencia/tft">TFT</a>'+
 '    <a href="https://dev.etsit.upm.es/ofic-inter-contact">Directorio de Personal</a>'+
-'    <a href="https://dev.etsit.upm.es/reservaespacios">Reserva Espacios</a>'+
+'    <a href="https://pruebas.etsit.upm.es/pdi/reserva-espacios">Reserva Espacios</a>'+
 '    <hr>'+
 '    <div>'+
 '        <a><h4 style="color:#FFFF;">Otras Aplicaciones</h4></a>'+
 '    </div>'+
 '    <div>'+
 '        <a href="http://www.etsit.upm.es/estudiantes/becas-y-ofertas-de-empleo.html">Becas y Empleo</a>'+
-'        <a href="https://pruebas.etsit.upm.es/pas/documentacion">Impresos PAS</a>'+
 '        <a href="https://pruebas.etsit.upm.es/pas/caus/">Incidencias (CAUs)</a>'+
 '        <a href="http://www.etsit.upm.es/footer-columnas4/personal/politecnica-virtual.html">Politécnica Virtual</a>'+
 '        <a href="https://www.etsit.upm.es/escuela/unidades-administrativas-y-servicios/reserva-de-espacios.html">Reserva de Espacios</a>'+
@@ -94,7 +94,7 @@ let a =
 '    </div>'+
 '</div>'+
 ''+
-'<span class="open-6659b527b8d152af596e174303b316a7 " style="font-size:30px;cursor:pointer;z-index: 9000" onclick="openNav06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05()">☰</span>'+
+'<span class="open-6659b527b8d152af596e174303b316a7 " style="font-size:30px;cursor:pointer;z-index: 10000" onclick="openNav06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05()">☰</span>'+
 '</div>';
 
 function openNav06c978e7c5f7f7cac4f30b0f194ad065536a72ed020b2f322f16e44f40300e05() {
